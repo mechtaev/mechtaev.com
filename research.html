@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sergey Mechtaev's Homepage">
+    <meta name="author" content="Sergey Mechtaev">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Sergey Mechtaev's Homepage</title>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="navbar-collapse offcanvas-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Research <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="publications.html">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="talks.html">Talks</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="my-4">
+        <p>My research interests include software engineering, programming languages and formal methods. My current research is focused on automated program repair techniques that eliminate bugs in program source code. My goal is to develop a <em>general-purpose</em> program repair system &mdash; a system that is able to address many kinds of defects in commodity software. The underlying principle behind my research consists in understanding the meaning of software defects via <em>semantic analysis</em>, which helps to navigate the conceptually large search space of patches and to compensate the lack of specification in real-world software.</p>
+      </div>
+
+      <h5 class="border-bottom border-gray pb-2 mb-3">Projects</h5>
+      <p>
+        <ul>
+
+          <li><strong>Angelix</strong> &mdash; Semantics-based program repair tool for C programs. It uses symbolic execution in order to extract specification from tests or a reference implementation, and generates a patch using program synthesis. Angelix is the first constraints-based program repair technique that scales to large real-world programs.<br>[<a href="http://angelix.io">Website</a>] [<a href="https://github.com/mechtaev/angelix">Repository</a>]
+          </li>
+
+          <li><strong>f1x</strong> &mdash; Test-driven automated program repair tool for C/C++ programs. f1x is designed to be efficient, robust and easy-to-use. It relies on lightweight analyses to efficiently explore large search spaces and guarantees to find the optimal patch according to a given cost function.<br>[TBA]
+          </li>
+
+          <li><strong>program-repair.org</strong> &mdash; Community-driven website, whose goal is to facilitate discovery, access and systematization of data related to automated program repair research.<br>[<a href="http://program-repair.org">Website</a>] [<a href="https://github.com/program-repair/program-repair.github.io/">Repository</a>]
+          </li>
+
+          <li><strong>Codeflaws</strong> &mdash; Program repair benchmark consisting of 3902 bugs from Codeforces programming competition for evaluating program repair tools across different defect classes.<br>[<a href="https://codeflaws.github.io/">Website</a>] [<a href="https://github.com/codeflaws/codeflaws">Repository</a>]
+          </li>
+
+        </ul>
+        Check my <a href="https://github.com/mechtaev">GitHub profile</a> for other projects.        
+      </p>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>
+
