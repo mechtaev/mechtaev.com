@@ -1,10 +1,15 @@
 .container {
-    margin-top: 15px;
-    /* width: auto; */
     max-width: 960px;
-    margin-left: 0
 }
 
+.jumbotron {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.content {
+    margin-top: 15px;
+}
 
 /* .title div { */
 /*     margin-left: 30px */
