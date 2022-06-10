@@ -9,3 +9,19 @@ body {
     list-style-type: none;
     padding: 0;
 }
+
+a:link { text-decoration: none; border-bottom:1px dotted; }
+a:visited { text-decoration: none; border-bottom:1px dotted; }
+a:hover { text-decoration: none; border-bottom:1px dotted; }
+a:active { text-decoration: none; border-bottom:1px dotted; }
+
+table td, table td * {
+    vertical-align: top;
+}
+table tr.spaceUnder>td {
+  padding-bottom: 0.5em;
+}
+
+.mybg {
+    background-color: #f2f4f8;
+}
