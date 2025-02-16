@@ -25,3 +25,8 @@ table tr.spaceUnder>td {
 .mybg {
     background-color: #f2f4f8;
 }
+
+.wide-columns {
+  border-collapse: separate; /* Ensure that the table cells are separated */
+  border-spacing: 15px; /* Adjust the value to increase or decrease the gap */
+}
