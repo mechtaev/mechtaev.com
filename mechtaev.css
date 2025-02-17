@@ -11,7 +11,7 @@ body {
 }
 
 .content-list-compact li:not(:last-child) {
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.4rem;
 }
 .content-list-compact {
     list-style-type: none;
