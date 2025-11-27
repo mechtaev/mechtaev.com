@@ -34,6 +34,10 @@ table tr.spaceUnder>td {
     background-color: #f2f4f8;
 }
 
+.mybg_green {
+    background-color: #E9FCE9;
+}
+
 .wide-columns {
   border-collapse: separate; /* Ensure that the table cells are separated */
   border-spacing: 15px; /* Adjust the value to increase or decrease the gap */
