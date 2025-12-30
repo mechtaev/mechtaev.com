@@ -1,0 +1,25 @@
+{% extends "page.html" %}
+
+{% import 'utils.html' as utils %}
+
+{% block inner %}
+<div class="mb-3">
+  <p>This page lists my awards, grants, deployments, and other important achievements.</p>
+  <ul>
+    {% for a in achievements %}
+    {% if loop.first or loop.previtem.year != a.year %}
+    <li class="flex py-2 text-xl font-sans text-neutral-500">{{ a.year }}</li>
+    {% endif %}
+    <li class="flex py-2 last:pb-0">
+      <div>
+        {% if a.type == 'grant' %}
+        <p class="text-base/5"><span class="font-bold">{{ a.funder }} {{ a.call }}</span><br/><span>{{ a.description }}.</span></p>
+        {% else %}
+        <p class="text-base/5"><span class="font-bold">{{ a.title }}</span><br/><span>{{ a.description }}</span></p>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>                
+</div>
+{% endblock %}

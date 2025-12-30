@@ -1,0 +1,1446 @@
+{
+    "general": {
+        "work_email": "mechtaev@pku.edu.cn",
+        "personal_email": "mechtaev@gmail.com",
+        "work_address": "Room 1542, Science Building #1, Peking University, No. 5 Yiheyuan Road, Beijing, 100871, China",
+        "bio": "Sergey Mechtaev is an Assistant Professor at Peking University. Previously, he obtained a PhD degree from the National University of Singapore, and was a faculty member at University College London. His research aims to automate the development and maintenance of trustworthy software. It has been recognized by prestigious awards, notably, an ACM SIGSOFT Outstanding Dissertation Award and two ACM SIGSOFT Distinguished Paper Awards, and has been deployed in industry, at Bloomberg, and academia, at IIT Kanpur.",
+        "website": "https://mechtaev.com",
+        "github": "github.com/mechtaev",
+        "twitter": "x.com/sergey_mechtaev",
+        "scholar": "https://scholar.google.com/citations?user=XTFR93cAAAAJ&hl=en",
+        "dblp": "https://dblp.uni-trier.de/pers/hd/m/Mechtaev:Sergey"
+        
+    },
+    "education": [
+        {
+            "university": "National University of Singapore",
+            "faculty": "School of Computing",
+            "degree": "Doctor of Philosophy",
+            "degree_short": "PhD",
+            "start": { "day": 1, "month": 8, "year": 2012 },
+            "end": { "day": 31, "month": 7, "year": 2018 },
+            "supervisor": "Abhik Roychoudhury",
+            "GPA": "4.4",
+            "thesis": "Semantic Program Repair"
+        },
+        {
+            "university": "Saint Petersburg State University",
+            "faculty": "Mathematics and Mechanics Faculty",
+            "degree": "Specialist",
+            "degree_short": "Specialist",
+            "start": { "day": 1, "month": 9, "year": 2006 },
+            "end": { "day": 14, "month": 6, "year": 2011 },
+            "supervisor": "Dmitry Boulytchev",
+            "GPA": "4.7",
+            "thesis": "Generic data processing library for Ocaml"
+        }
+    ],
+    "employment": [
+        {
+            "employer": "Peking University",
+            "history": [
+                {
+                    "title": "Assistant Professor",
+                    "start": { "day": 1, "month": 8, "year": 2024 },
+                    "full_time": true
+                }
+            ],
+            "description": "Conduct independent research, teach courses.",
+            "location": "Beijing, China",
+            "selected": true
+        },
+        {
+            "employer": "University College London",
+            "history": [
+                {
+                    "title": "Associate Professor",
+                    "start": { "day": 26, "month": 6, "year": 2024 },
+                    "end": { "day": 26, "month": 6, "year": 2024 },
+                    "full_time": true
+                },
+                {
+                    "title": "Lecturer",
+                    "start": { "day": 26, "month": 6, "year": 2024 },
+                    "end": { "day": 1, "month": 2, "year": 2019 },
+                    "full_time": true
+                }                
+            ],
+            "description": "Conducted independent research, taught courses, served as year 3 undergraduate coordinator.",
+            "location": "London, United Kingdom",
+            "selected": true
+        },
+        {
+            "employer": "National University of Singapore",
+            "history": [
+                {
+                    "title": "Research Assistant",
+                    "start": { "day": 1, "month": 3, "year": 2017 },
+                    "end": { "day": 31, "month": 1, "year": 2019 },
+                    "full_time": true
+                }
+            ],
+            "description": "Conducted research in TSUNAMi center supervised by Abhik Roychoudhury.",
+            "location": "Singapore",
+            "selected": false
+        },
+        {
+            "employer": "Fondazione Bruno Kessler",
+            "history": [
+                {
+                    "title": "Intern",
+                    "start": { "day": 1, "month": 2, "year": 2016 },
+                    "end": { "day": 1, "month": 6, "year": 2016 },
+                    "full_time": true
+                }
+            ],
+            "description": "Conducted research in Embedded Systems Unit supervised by Alberto Griggio.",
+            "location": "Trento, Italy",
+            "selected": false
+        },
+        {
+            "employer": "Computer Vision System LLC",
+            "history": [
+                {
+                    "title": "Technician Programmer",
+                    "start": { "day": 2, "month": 3, "year": 2012 },
+                    "end": { "day": 11, "month": 7, "year": 2012 },
+                    "full_time": false
+                }
+            ],
+            "description": "Developed an hardware component for a computer vision system.",
+            "location": "Saint Petersburg, Russia",
+            "selected": false
+        },
+        {
+            "employer": "Lanit-Tercom",
+            "history": [
+                {
+                    "title": "Programmer",
+                    "start": { "day": 3, "month": 5, "year": 2011 },
+                    "end": { "day": 1, "month": 3, "year": 2012 },
+                    "full_time": false
+                }
+            ],
+            "description": "Developed an OCaml generic programming library.",
+            "location": "Saint Petersburg, Russia",
+            "selected": false
+        }
+    ],
+    "publications": [
+        {
+            "id": "mnimi",
+            "title": "Reducing Hallucinations in LLM-Generated Code via Semantic Triangulation",
+            "authors": [
+                { "name": "Yihan Dai", "authorship": "normal" },
+                { "name": "Sijie Liang", "authorship": "normal" },
+                { "name": "Haotian Xu", "authorship": "normal" },
+                { "name": "Peichu Xie", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "normal" }
+            ],
+            "year": 2026,
+            "selected": false,
+            "links": [
+                {
+                    "url": "https://arxiv.org/abs/2511.12288",
+                    "label": "Preprint"
+                }
+            ]
+        },
+        {
+            "id": "mnimi",
+            "title": "Statistical Independence Aware Caching for LLM Workflows",
+            "authors": [
+                { "name": "Yihan Dai", "authorship": "normal" },
+                { "name": "Dimitrios Stamatios Bouras", "authorship": "normal" },
+                { "name": "Haoxiang Jia", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "normal" }
+            ],
+            "venue": "International Workshop on Large Language Models for Code",
+            "venue_short": "LLM4Code@ICSE",
+            "year": 2026,
+            "selected": false,
+            "links": [
+                {
+                    "url": "https://arxiv.org/abs/2511.22118",
+                    "label": "Preprint"
+                },
+                {
+                    "url": "https://github.com/msv-lab/mnimi",
+                    "label": "Artifact"
+                }
+            ]
+        },
+        {
+            "id": "hoareprompt",
+            "title": "HoarePrompt: Structural Reasoning About Program Correctness in Natural Language",
+            "authors": [
+                { "name": "Dimitrios Stamatios Bouras", "authorship": "normal" },
+                { "name": "Yihan Dai", "authorship": "normal" },
+                { "name": "Tairan Wang", "authorship": "normal" },
+                { "name": "Yingfei Xiong", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "corresponding" }
+            ],
+            "venue": "International Conference on Software Engineering",
+            "venue_short": "ICSE",
+            "year": 2026,
+            "links": [
+                {
+                    "url": "https://arxiv.org/pdf/2503.19599",
+                    "label": "Preprint"
+                },
+                {
+                    "url": "https://github.com/msv-lab/HoarePrompt",
+                    "label": "Artifact"
+                }
+            ],
+            "selected": false
+        },
+        {
+            "id": "specfix",
+            "title": "Automated Repair of Ambiguous Problem Descriptions for LLM-Based Code Generation",
+            "authors": [
+                { "name": "Haoxiang Jia", "authorship": "normal" },
+                { "name": "Robbie Morris", "authorship": "normal" },
+                { "name": "He Ye", "authorship": "normal" },
+                { "name": "Federica Sarro", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "corresponding" }
+            ],
+            "venue": "International Conference on Automated Software Engineering",
+            "venue_short": "ASE",
+            "year": 2025,
+            "links": [
+                {
+                    "url": "https://arxiv.org/pdf/2505.07270",
+                    "label": "Preprint"
+                },
+                {
+                    "url": "https://github.com/msv-lab/SpecFix",
+                    "label": "Artifact"
+                }
+            ],
+            "selected": false
+        },
+        {
+            "id": "crossover",
+            "title": "LLM-Assisted Crossover in Genetic Improvement of Software",
+            "authors": [
+                { "name": "Dimitrios Stamatios Bouras", "authorship": "normal" },
+                { "name": "Justyna Petke", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "normal" }
+            ],
+            "venue": "International Workshop on Genetic Improvement",
+            "venue_short": "GI@ICSE",
+            "year": 2025,
+            "selected": false
+        },
+        {
+            "id": "maniple",
+            "title": "The Fact Selection Problem in LLM-Based Program Repair",
+            "authors": [
+                { "name": "Nikhil Parasaram", "authorship": "normal" },
+                { "name": "Huijie Yan", "authorship": "equal" },
+                { "name": "Boyu Yang", "authorship": "equal" },
+                { "name": "Zineb Flahy", "authorship": "normal" },
+                { "name": "Abriele Qudsi", "authorship": "normal" },
+                { "name": "Damian Ziaber", "authorship": "normal" },
+                { "name": "Earl T. Barr", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "corresponding" }
+            ],
+            "venue": "International Conference on Software Engineering",
+            "venue_short": "ICSE",
+            "year": 2025,
+            "file": "icse25.pdf",
+            "file_label": "Postprint",
+            "links": [
+                {
+                    "url": "https://arxiv.org/pdf/2404.05520",
+                    "label": "Preprint"
+                },
+                {
+                    "url": "https://github.com/PyRepair/maniple",
+                    "label": "Artifact"
+                }
+            ],
+            "selected": false
+        },
+        {
+            "id": "llmcodechoice",
+            "title": "Oracle-guided Program Selection from Large Language Models",
+            "authors": [
+                { "name": "Zhiyu Fan", "authorship": "normal" },
+                { "name": "Haifeng Ruan", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "normal" },
+                { "name": "Abhik Roychoudhury", "authorship": "normal" }
+            ],
+            "venue": "International Symposium on Software Testing and Analysis",
+            "venue_short": "ISSTA",
+            "year": 2024,
+            "file": "issta24.pdf",
+            "file_label": "Postprint",
+            "selected": false
+        },
+        {
+            "id": "f1x_at_aprcomp24",
+            "title": "F1X at APR-COMP 2024",
+            "authors": [
+                { "name": "Sergey Mechtaev", "authorship": "normal" },
+                { "name": "Shin Hwei Tan", "authorship": "normal" }                
+            ],
+            "venue": "International Competition on Automated Program Repair",
+            "venue_short": "APR-COMP",
+            "year": 2024,
+            "file": "aprcomp24.pdf",
+            "file_label": "Postprint",
+            "selected": false
+        },
+        {
+            "id": "bassist",
+            "title": "User-Centric Deployment of Automated Program Repair at Bloomberg",
+            "authors": [
+                { "name": "David Williams", "authorship": "normal" },
+                { "name": "James Callan", "authorship": "normal" },
+                { "name": "Serkan Kirbas", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "normal" },
+                { "name": "Justyna Petke", "authorship": "normal" },
+                { "name": "Thomas Prideaux-Ghee", "authorship": "normal" },
+                { "name": "Federica Sarro", "authorship": "normal" }
+            ],
+            "venue": "International Conference on Software Engineering - Software Engineering in Practice",
+            "venue_short": "ICSE SEIP",
+            "year": 2024,
+            "links": [
+                {
+                    "url": "https://arxiv.org/abs/2311.10516",
+                    "label": "Preprint"
+                }
+            ],
+            "awards": [
+                "Winner of APR-COMP 2024 Functional Errors/C Track"
+            ],
+            "selected": false
+        },
+        {
+            "id": "psp",
+            "title": "Precise Data-Driven Approximation for Program Analysis via Fuzzing",
+            "authors": [
+                { "name": "Nikhil Parasaram", "authorship": "normal" },
+                { "name": "Earl T. Barr", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "normal" },
+                { "name": "Marcel Boehme", "authorship": "normal" }
+            ],
+            "venue": "International Conference on Automated Software Engineering",
+            "venue_short": "ASE",
+            "year": 2023,
+            "file": "ase23.pdf",
+            "file_label": "Postprint",
+            "selected": false
+        },
+        {
+            "id": "symlog",
+            "title": "Program Repair Guided by Datalog-Defined Static Analysis",
+            "authors": [
+                { "name": "Liu Yu", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "corresponding" },
+                { "name": "Pavle Subotic", "authorship": "normal" },
+                { "name": "Abhik Roychoudhury", "authorship": "normal" }
+            ],
+            "venue": "International Conference on the Foundations of Software Engineering",
+            "venue_short": "FSE",
+            "year": 2023,
+            "file": "fse23.pdf",
+            "file_label": "Postprint",
+            "links": [
+                {
+                    "url": "https://github.com/msv-lab/symlog",
+                    "label": "Artifact"
+                }
+            ],
+            "selected": false
+        },
+        {
+            "id": "accelerating",
+            "title": "Continuously Accelerating Research",
+            "authors": [
+                { "name": "Earl T. Barr", "authorship": "normal" },
+                { "name": "Jonathan Bell", "authorship": "normal" },
+                { "name": "Michael Hilton", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "normal" },
+                { "name": "Christopher Timperley", "authorship": "normal" }
+            ],
+            "venue": "International Conference on Software Engineering - New Ideas and Emerging Results",
+            "venue_short": "ICSE NIER",
+            "year": 2023,
+            "file": "icse23-nier.pdf",
+            "file_label": "Postprint",
+            "awards": [
+                "ACM SIGSOFT Distinguished Paper Award"
+            ],
+            "selected": false
+        },
+        {
+            "id": "rete",
+            "title": "Rete: Learning Namespace Representation for Program Repair",
+            "authors": [
+                { "name": "Nikhil Parasaram", "authorship": "normal" },
+                { "name": "Earl T. Barr", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "normal" }
+            ],
+            "venue": "International Conference on Software Engineering",
+            "venue_short": "ICSE",
+            "year": 2023,
+            "file": "icse23.pdf",
+            "file_label": "Postprint",
+            "awards": [
+                "ACM SIGSOFT Distinguished Paper Award"
+            ],
+            "links": [
+                {
+                    "url": "https://github.com/norhh/Rete",
+                    "label": "Artifact"
+                }
+            ],
+            "selected": true
+        },
+        {
+            "id": "trailblazer",
+            "title": "Efficient SMT-based Network Fault Tolerance Verification",
+            "authors": [
+                { "name": "Yu Liu", "authorship": "normal" },
+                { "name": "Pavle Subotic", "authorship": "normal" },
+                { "name": "Emmanuel Letier", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "normal" },
+                { "name": "Abhik Roychoudhury", "authorship": "normal" }
+            ],
+            "venue": "International Symposium on Formal Methods",
+            "venue_short": "FM",
+            "year": 2023,
+            "file": "fm23.pdf",
+            "file_label": "Postprint",
+            "selected": false
+        },
+        {
+            "id": "modus",
+            "title": "Modus: A Datalog Dialect for Building Container Images",
+            "authors": [
+                { "name": "Chris Tomy", "authorship": "joint" },
+                { "name": "Tingmao Wang", "authorship": "joint" },
+                { "name": "Earl T. Barr", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "normal" }
+            ],
+            "venue": "International Conference on the Foundations of Software Engineering",
+            "venue_short": "FSE",
+            "year": 2022,
+            "file": "fse22.pdf",
+            "file_label": "Postprint",
+            "links": [
+                {
+                    "url": "https://github.com/msv-lab/modus",
+                    "label": "Artifact"
+                }
+            ],
+            "selected": false
+        },
+        {
+            "id": "fairrepair",
+            "title": "Fair Decision Making via Automated Repair of Decision Trees",
+            "authors": [
+                { "name": "Jiang Zhang", "authorship": "normal" },
+                { "name": "Ivan Beschastnikh", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "normal" },
+                { "name": "Abhik Roychoudhury", "authorship": "normal" }
+            ],
+            "venue": "International Workshop on Equitable Data and Technology",
+            "venue_short": "FairWare",
+            "year": 2022,
+            "file": "FairWare22.pdf",
+            "file_label": "Postprint",
+            "selected": false
+        },
+        {
+            "id": "trident",
+            "title": "Trident: Controlling Side Effects in Automated Program Repair",
+            "authors": [
+                { "name": "Nikhil Parasaram", "authorship": "normal" },
+                { "name": "Earl T. Barr", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "normal" }
+            ],
+            "venue": "Transactions on Software Engineering",
+            "venue_short": "TSE",
+            "year": 2021,
+            "file": "tse21trident.pdf",
+            "file_label": "Postprint",     
+            "links": [
+                {
+                    "url": "https://github.com/norhh/Trident",
+                    "label": "Artifact"
+                }
+            ],
+            "selected": false
+        },
+        {
+            "id": "apiarty",
+            "title": "Evaluating Automatic Program Repair Capabilities to Repair API Misuses",
+            "authors": [
+                { "name": "Maria Kechagia", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "normal" },
+                { "name": "Federica Sarro", "authorship": "normal" },
+                { "name": "Mark Harman", "authorship": "normal" }
+            ],
+            "venue": "Transactions on Software Engineering",
+            "venue_short": "TSE",
+            "year": 2021,
+            "file": "tse21.pdf",
+            "file_label": "Postprint",
+            "links": [
+                {
+                    "url": "https://github.com/SOLAR-group/APIARTy",
+                    "label": "Artifact"
+                }
+            ],
+            "selected": false
+        },
+        {
+            "id": "refactory",
+            "title": "Re-factoring Based Program Repair Applied to Programming Assignments",
+            "authors": [
+                { "name": "Yang Hu", "authorship": "normal" },
+                { "name": "Umair Z. Ahmed", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "normal" },
+                { "name": "Ben Leong", "authorship": "normal" },
+                { "name": "Abhik Roychoudhury", "authorship": "normal" }
+            ],
+            "venue": "International Conference on Automated Software Engineering",
+            "venue_short": "ASE",
+            "year": 2019,
+            "file": "ase19.pdf",
+            "file_label": "Postprint",
+            "links": [
+                {
+                    "url": "https://github.com/githubhuyang/refactory",
+                    "label": "Artifact"
+                }
+            ],
+            "selected": false
+        },
+        {
+            "id": "fix2fit",
+            "title": "Crash-Avoiding Program Repair",
+            "authors": [
+                { "name": "Xiang Gao", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "normal" },
+                { "name": "Abhik Roychoudhury", "authorship": "normal" }
+            ],
+            "venue": "International Symposium on Software Testing and Analysis",
+            "venue_short": "ISSTA",
+            "year": 2019,
+            "file": "issta19.pdf",
+            "file_label": "Postprint",
+            "links": [
+                {
+                    "url": "https://www.github.com/gaoxiang9430/fix2fit",
+                    "label": "Artifact"
+                }
+            ],
+            "selected": false
+        },
+        {
+            "id": "phd_thesis",
+            "title": "Semantic Program Repair",
+            "authors": [
+                { "name": "Sergey Mechtaev", "authorship": "normal" }
+            ],
+            "venue": "National University of Singapore, PhD Thesis",
+            "venue_short": "NUS, PhD Thesis",
+            "year": 2018,
+            "file": "phd-thesis.pdf",
+            "file_label": "Postprint",
+            "awards": [
+                "ACM SIGSOFT Outstanding Doctoral Dissertation Award"
+            ],
+            "links": [
+                {
+                    "url": "https://www.comp.nus.edu.sg/news/2019-sergey-mechtaev/",
+                    "label": "NUS Computing Highlights"
+                }
+            ],
+            "selected": false
+        },
+        {
+            "id": "seesoc",
+            "title": "Symbolic Execution with Existential Second-Order Constraints",
+            "authors": [
+                { "name": "Sergey Mechtaev", "authorship": "normal" },
+                { "name": "Alberto Griggio", "authorship": "normal" },
+                { "name": "Alessandro Cimatti", "authorship": "normal" },
+                { "name": "Abhik Roychoudhury", "authorship": "normal" }
+            ],
+            "venue": "International Conference on the Foundations of Software Engineering",
+            "venue_short": "FSE",
+            "year": 2018,
+            "file": "fse18.pdf",
+            "file_label": "Postprint",
+            "selected": false
+        },
+        {
+            "id": "f1x",
+            "title": "Test-equivalence Analysis for Automatic Patch Generation",
+            "authors": [
+                { "name": "Sergey Mechtaev", "authorship": "normal" },
+                { "name": "Xiang Gao", "authorship": "normal" },
+                { "name": "Shin Hwei Tan", "authorship": "normal" },
+                { "name": "Abhik Roychoudhury", "authorship": "normal" }
+            ],
+            "venue": "Transactions on Software Engineering and Methodology",
+            "venue_short": "TOSEM",
+            "year": 2018,
+            "file": "tosem18.pdf",
+            "file_label": "Postscript",
+            "links": [
+                {
+                    "url": "https://github.com/msv-lab/f1x",
+                    "label": "Artifact"
+                }
+            ],
+            "selected": false
+        },
+        {
+            "id": "semgraft",
+            "title": "Semantic Program Repair Using a Reference Implementation",
+            "authors": [
+                { "name": "Sergey Mechtaev", "authorship": "joint" },
+                { "name": "Manh-Dung Nguyen", "authorship": "joint" },
+                { "name": "Yannic Noller", "authorship": "normal" },
+                { "name": "Lars Grunske", "authorship": "normal" },
+                { "name": "Abhik Roychoudhury", "authorship": "normal" }
+            ],
+            "venue": "International Conference on Software Engineering",
+            "venue_short": "ICSE",
+            "year": 2018,
+            "file": "icse18.pdf",
+            "file_label": "Postprint",
+            "selected": false
+        },
+        {
+            "id": "correlation",
+            "title": "A Correlation Study between Automated Program Repair and Test-Suite Metrics",
+            "authors": [
+                { "name": "Jooyong Yi", "authorship": "normal" },
+                { "name": "Shin Hwei Tan", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "normal" },
+                { "name": "Marcel Boehme", "authorship": "normal" },
+                { "name": "Abhik Roychoudhury", "authorship": "normal" }
+            ],
+            "venue": "Empirical Software Engineering",
+            "venue_short": "EMSE",
+            "year": 2017,
+            "file": "emse17.pdf",
+            "file_label": "Postprint",
+            "selected": false
+        },
+        {
+            "id": "codeflaws",
+            "title": "Codeflaws: A Programming Competition Benchmark for Evaluating Automated Program Repair Tools",
+            "authors": [
+                { "name": "Shin Hwei Tan", "authorship": "normal" },
+                { "name": "Jooyong Yi", "authorship": "normal" },
+                { "name": "Yulis", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "normal" },
+                { "name": "Abhik Roychoudhury", "authorship": "normal" }
+            ],
+            "venue": "International Conference on Software Engineering - Poster Track",
+            "venue_short": "ICSE Poster",
+            "year": 2017,
+            "file": "icse17codeflaws.pdf",
+            "file_label": "Postprint",
+            "links": [
+                {
+                    "url": "https://codeflaws.github.io/",
+                    "label": "Artifact"
+                }
+            ],
+            "selected": false
+        },
+        {
+            "id": "angelix",
+            "title": "Angelix: Scalable Multiline Program Patch Synthesis via Symbolic Analysis",
+            "authors": [
+                { "name": "Sergey Mechtaev", "authorship": "normal" },
+                { "name": "Jooyong Yi", "authorship": "normal" },
+                { "name": "Abhik Roychoudhury", "authorship": "normal" }
+            ],
+            "venue": "International Conference on Software Engineering",
+            "venue_short": "ICSE",
+            "year": 2016,
+            "file": "icse16.pdf",
+            "file_label": "Postprint",
+            "links": [
+                {
+                    "url": "https://github.com/msv-lab/angelix",
+                    "label": "Artifact"
+                }
+            ],
+            "selected": false
+        },
+        {
+            "id": "directfix",
+            "title": "DirectFix: Looking for Simple Program Repairs",
+            "authors": [
+                { "name": "Sergey Mechtaev", "authorship": "normal" },
+                { "name": "Jooyong Yi", "authorship": "normal" },
+                { "name": "Abhik Roychoudhury", "authorship": "normal" }
+            ],
+            "venue": "International Conference on Software Engineering",
+            "venue_short": "ICSE",
+            "year": 2015,
+            "file": "icse15.pdf",
+            "file_label": "Postprint",
+            "selected": false
+        },
+        {
+            "id": "specialist-thesis",
+            "title": "Generic Programming Library for OCaml (In Russian)",
+            "authors": [
+                { "name": "Sergey Mechtaev", "authorship": "normal" }
+            ],
+            "venue": "Saint Petersburg State University, Specialist Thesis",
+            "venue_short": "SPbSU, Specialist Thesis",
+            "year": 2011,
+            "file": "specialist-thesis.pdf",
+            "file_label": "Postprint",
+            "selected": false
+        },
+        {
+            "id": "ocaml_syb_se",
+            "title": "Eliminating boilerplate code in Objective Caml programs (In Russian)",
+            "authors": [
+                { "name": "Sergey Mechtaev", "authorship": "normal" }
+            ],
+            "venue": "System Programming",
+            "venue_short": "System Programming",
+            "year": 2011,
+            "file": "se11.pdf",
+            "file_label": "Postprint",
+            "selected": false
+        },
+        {
+            "id": "ocaml_syb",
+            "title": "Efficiently Scrapping Boilerplate Code in OCaml",
+            "authors": [
+                { "name": "Dmitri Boulytchev", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "normal" }
+            ],
+            "venue": "ML Family Workshop",
+            "venue_short": "ML",
+            "year": 2011,
+            "file": "ml11.pdf",
+            "file_label": "Postprint",
+            "links": [
+                {
+                    "url": "http://oops.math.spbu.ru/syb-ocaml/",
+                    "label": "Artifact"
+                }
+            ],
+            "selected": false
+        }
+    ],
+    "news": [
+        {
+            "date": { "day": 30, "month": 11, "year": 2025 },
+ 	          "text": "A paper on caching LLM workflows has been accepted to LLM4Code@ICSE'26."
+        },
+        {
+            "date": { "day": 15, "month": 10, "year": 2025 },
+ 	          "text": "A paper on LLM reasoning about program correctness has been accepted to ICSE'26."
+        },
+        {
+            "date": { "day": 25, "month": 9, "year": 2025 },
+ 	          "text": "A paper on repairing ambiguous requirements has been accepted to ASE'25."
+        },
+        {
+            "date": { "day": 4, "month": 2, "year": 2025 },
+ 	          "text": "A paper on LLM for genetic programming has been accepted to GI@ICSE'25."
+        },
+        {
+            "date": { "day": 23, "month": 1, "year": 2025 },
+ 	          "text": "I gave a talk on synergizing program analysis and ML at Shonan Meeting 217."
+        },
+        {
+            "date": { "day": 31, "month": 10, "year": 2024 },
+ 	          "text": "A paper on selecting relevant information for LLM-based program repair has been accepted to ICSE'25."
+        },
+        {
+            "date": { "day": 1, "month": 8, "year": 2024 },
+ 	          "text": "I started working as an Assistant Professor at Peking University."
+        },
+        {
+            "date": { "day": 2, "month": 7, "year": 2024 },
+ 	          "text": "A paper on LLM-based code generation has been accepted to ISSTA'24."
+        },
+        {
+            "date": { "day": 1, "month": 7, "year": 2024 },
+ 	          "text": "I resigned from UCL and received an honorary lecturer title."
+        },
+        {
+            "date": { "day": 26, "month": 6, "year": 2024 },
+ 	          "text": "I have been promoted to Associate Professor at UCL."
+        },
+        {
+            "date": { "day": 19, "month": 4, "year": 2024 },
+ 	          "text": "Our ICSE'24 SEIP paper received ACM SIGSOFT Distinguished Paper Award."
+        },
+        {
+            "date": { "day": 22, "month": 1, "year": 2024 },
+ 	          "text": "F1X won Functional Errors/C track of APR-COMP 2024."
+        },
+        {
+            "date": { "day": 20, "month": 12, "year": 2023 },
+ 	          "text": "A paper on deployment of program repair at Bloomberg has been accepted to ICSE SEIP'24."
+        },
+        {
+            "date": { "day": 22, "month": 11, "year": 2023 },
+ 	          "text": "I gave a talk about Symlog at the National University of Singapore."
+        },
+        {
+            "date": { "day": 17, "month": 11, "year": 2023 },
+ 	          "text": "I gave a talk about Symlog at Imperial College London."
+        },
+        {
+            "date": { "day": 16, "month": 9, "year": 2023 },
+ 	          "text": "I am co-organising APR workshop at ICSE'24."
+        },
+        {
+            "date": { "day": 7, "month": 8, "year": 2023 },
+ 	          "text": "A paper on enhancing program analysis with fuzzing is accepted to ASE'23."
+        },
+        {
+            "date": { "day": 27, "month": 7, "year": 2023 },
+ 	          "text": "A paper on using Datalog for program repair has been accepted to FSE'23."
+        },
+        {
+            "date": { "day": 22, "month": 2, "year": 2023 },
+ 	          "text": "Our ICSE'23 paper received ACM SIGSOFT Distinguished Paper Award."
+        },
+        {
+            "date": { "day": 22, "month": 12, "year": 2022 },
+ 	          "text": "I have given a talk about Modus at JetBrains."
+        },
+        {
+            "date": { "day": 21, "month": 12, "year": 2022 },
+ 	          "text": "A paper on reproducible research has been accepted to ICSE'23 NIER."
+        },
+        {
+            "date": { "day": 8, "month": 12, "year": 2022 },
+ 	          "text": "A paper on learning variables for patch synthesis has been accepted to ICSE'23."
+        },
+        {
+            "date": { "day": 21, "month": 11, "year": 2022 },
+ 	          "text": "I have given a talk about Modus at Microsoft."
+        },
+        {
+            "date": { "day": 16, "month": 11, "year": 2022 },
+ 	          "text": "A paper on SMT-based network verification has been accepted to FM'23."
+        },
+        {
+            "date": { "day": 7, "month": 10, "year": 2022 },
+ 	          "text": "I am co-organising automated program repair workshop at ICSE 2023."
+        },
+        {
+            "date": { "day": 3, "month": 8, "year": 2022 },
+ 	          "text": "I have given a talk about Modus at NUS."
+        },
+        {
+            "date": { "day": 14, "month": 6, "year": 2022 },
+ 	          "text": "A paper describing Modus has been accepted to FSE'22."
+        },
+        {
+            "date": { "day": 16, "month": 3, "year": 2022 },
+ 	          "text": "A paper on fairness repair has been accepted to FairWare'22."
+        },
+        {
+            "date": { "day": 15, "month": 11, "year": 2021 },
+ 	          "text": "I am co-organising automated program repair workshop at ICSE 2022."
+        },
+        {
+            "date": { "day": 28, "month": 9, "year": 2021 },
+ 	          "text": "A paper on synthesising patches with side effects has been accepted to TSE."
+        },
+        {
+            "date": { "day": 3, "month": 2, "year": 2021 },
+ 	          "text": "An empirical study on API misuse repair has been accepted to TSE."
+        },
+        {
+            "date": { "day": 15, "month": 11, "year": 2020 },
+ 	          "text": "I am co-organising automated program repair workshop at ICSE 2021."
+        },
+        {
+            "date": { "day": 5, "month": 8, "year": 2020 },
+ 	          "text": "I have given a talk on semantic program repair at NUS Computing Research Week."
+        },
+        {
+            "date": { "day": 14, "month": 6, "year": 2022 },
+ 	          "text": "A paper describing Modus has been accepted to FSE'22."
+        },
+        {
+            "date": { "day": 16, "month": 3, "year": 2022 },
+ 	          "text": "A paper on fairness repair has been accepted to FairWare'22."
+        },
+        {
+            "date": { "day": 15, "month": 11, "year": 2021 },
+ 	          "text": "I am co-organising automated program repair workshop at ICSE 2022"
+        },
+        {
+            "date": { "day": 28, "month": 9, "year": 2021 },
+ 	          "text": "A paper on synthesising patches with side effects has been accepted to TSE"
+        },
+        {
+            "date": { "day": 3, "month": 2, "year": 2021 },
+ 	          "text": "An empirical study on API misuse repair has been accepted to TSE"
+        },
+        {
+            "date": { "day": 15, "month": 11, "year": 2020 },
+ 	          "text": "I am co-organising automated program repair workshop at ICSE 2021"
+        },
+        {
+            "date": { "day": 5, "month": 8, "year": 2020 },
+ 	          "text": "I have given a talk on semantic program repair at NUS Computing Research Week"
+        },
+        {
+            "date": { "day": 20, "month": 1, "year": 2020 },
+ 	          "text": "I have given a talk on semantic program repair at 62nd CREST Open Workshop on program repair and GI"
+        },
+        {
+            "date": { "day": 15, "month": 11, "year": 2019 },
+ 	          "text": "I am co-organising automated program repair workshop at ICSE 2020"
+        },
+        {
+            "date": { "day": 27, "month": 9, "year": 2019 },
+ 	          "text": "I have attended Shonan Meeting 160 on Fuzzing and Symbolic Execution"
+        },
+        {
+            "date": { "day": 1, "month": 9, "year": 2019 },
+ 	          "text": "A paper on program repair for education has been accepted to ASE'19"
+        },
+        {
+            "date": { "day": 22, "month": 7, "year": 2019 },
+ 	          "text": "I have given a talk on semantic program repair at SUSTech"
+        },
+        {
+            "date": { "day": 26, "month": 6, "year": 2019 },
+ 	          "text": "I have received National University of Singapore IMDA Excellence Prize"
+        },
+        {
+            "date": { "day": 8, "month": 5, "year": 2019 },
+ 	          "text": "I am giving a talk on semantic program repair at Imperial College London on May 16"
+        },
+        {
+            "date": { "day": 1, "month": 5, "year": 2019 },
+ 	          "text": "A paper on test generation for program repair has been accepted to ISSTA'19"
+        },
+        {
+            "date": { "day": 30, "month": 3, "year": 2019 },
+ 	          "text": "I am giving a talk on symbolic execution at JetBrains Research on April 1"
+        },
+        {
+            "date": { "day": 20, "month": 3, "year": 2019 },
+ 	          "text": "I have received ACM SIGSOFT Outstanding Doctoral Dissertation Award"
+        },
+        {
+            "date": { "day": 1, "month": 2, "year": 2019 },
+	          "text": "I have joined Department of Computer Science at University College London as a Lecturer"
+        },
+        {
+            "date": { "day": 13, "month": 8, "year": 2018 },
+	          "text": "I have attended Marktoberdorf Summer School 2018"
+        },
+        {
+            "date": { "day": 24, "month": 7, "year": 2018 },
+	          "text": "A paper on test-equivalence for program repair has been accepted to TOSEM"
+        },
+        {
+            "date": { "day": 21, "month": 6, "year": 2018 },
+	          "text": "I have defended my PhD thesis \"Semantic program repair\""
+        },
+        {
+            "date": { "day": 11, "month": 6, "year": 2018 },
+	          "text": "A paper introducing second-order symbolic execution has been accepted to FSE'18"
+        },
+        {
+            "date": { "day": 18, "month": 4, "year": 2018 },
+	          "text": "I have attended Dagstuhl Seminar 18151 on Program Equivalence"
+        },
+        {
+            "date": { "day": 14, "month": 12, "year": 2017 },
+	          "text": "A paper on program repair using a reference implementation has been accepted to ICSE'18"
+        },
+        {
+            "date": { "day": 12, "month": 9, "year": 2017 },
+	          "text": "A correlation study between program repair and test-suite metrics has been accepted to EMSE"
+        },
+        {
+            "date": { "day": 12, "month": 7, "year": 2017 },
+	          "text": "A technical report on applying test-equivalence to scale program repair is available in arXiv"
+        },
+        {
+            "date": { "day": 20, "month": 3, "year": 2017 },
+	          "text": "A new version of our program repair tool Angelix 1.1 has been released"
+        },
+        {
+            "date": { "day": 14, "month": 2, "year": 2017 },
+	          "text": "A poster on the program repair benchmark Codeflaws has been accepted to ICSE'17"
+        }
+    ],
+    "achievements": [
+        {
+            "type": "grant",
+            "funder": "NSFC/国家自然科学基金",
+            "call": "Key Research Project/重大研究计划",
+            "description": "For the proposal \"Neurosymbolic High-Confidence Code Generation and Optimization\" led by Prof. Yingfei Xiong in collaboration with Prof. Wen-Pin Jiao, Prof. Yanlin Wang, Prof. Yang Yu, Prof. Yang Liu, Prof. Wei Zhao, Prof. Siyuan Jiang",
+            "year": 2025
+        },
+        {
+            "type": "grant",
+            "funder": "PKU-KU",
+            "call": "Peking University-Korea University Joint Research Funding",
+            "description": "For the proposal \"Counterfactual inference for detecting and repairing hallucinations of code LLMs\" with Prof. Dongsun Kim",
+            "year": 2025
+        },
+        {
+            "type": "grant",
+            "funder": "NSFC/国家自然科学基金",
+            "call": "Excellent Young Scientists Fund (Overseas)/优秀青年科学基金项目（海外）",
+            "description": "For my proposal \"Symbolic Executon of Datalog for Program Repair\"",
+            "year": 2024
+        },
+        {
+            "type": "award",
+            "title": "ACM SIGSOFT Distinguished Paper Award",
+            "description": "For ICSE'24 SEIP paper \"User-Centric Deployment of Automated Program Repair at Bloomberg\".",
+            "year": 2024
+        },
+        {
+            "type": "award",
+            "title": "F1X won Functional Errors/C track of APR-COMP 2024",
+            "description": "F1X, a program repair tool described in our TOSEM 2018 paper \"Test-equivalence Analysis for Automatic Patch Generation\" won the Functional Errors/C track of APR-COMP 2024.",
+            "year": 2024
+        },
+        {
+            "type": "other",
+            "title": "B-Assist is deployed at Bloomberg",
+            "description": "B-Assist, described in our ICSE SEIP'24 paper \"User-Centric Deployment of Automated Program Repair at Bloomberg\", was deployed at Bloomberg across 1000 repositories.",
+            "year": 2023
+        },
+        {
+            "type": "award",
+            "title": "ACM SIGSOFT Distinguished Paper Award",
+            "description": " For ICSE'23 paper \"Rete: Learning Namespace Representation for Program Repair\".",
+            "year": 2023
+        },
+        {
+            "type": "award",
+            "title": "National University of Singapore IMDA Excellence Prize",
+            "description": "For School of Computing's best PhD thesis \"Semantic Program Repair\".",
+            "year": 2019
+        },
+        {
+            "type": "award",
+            "title": "ACM SIGSOFT Outstanding Doctoral Dissertation Award",
+            "description": "For PhD thesis \"Semantic Program Repair\".",
+            "year": 2019
+        },
+        {
+            "type": "other",
+            "title": "Angelix is deployed at IIT Kanpur",
+            "description": "My program repair tool Angelix is deployed at IIT Kanpur for intelligent tutoring, as described in FSE'17 paper \"A feasibility study of using automated program repair for introductory programming assignments\".",
+            "year": 2017
+        },
+        {
+            "type": "award",
+            "title": "National University of Singapore Research Achievement Award",
+            "description": "For my research on automated program repair.",
+            "year": 2016
+        },
+        {
+            "type": "award",
+            "title": "ACM ICPC NEERC Northern Subregional Contest Honorable Mention",
+            "description": "For my participation in ACM ICPC programming competition.",
+            "year": 2007
+        }
+    ],
+    "talks": [
+        {
+            "title": "Reducing Hallucinations in LLM-Generated Code via Semantic Triangulation",
+            "date": { "day": 25, "month": 12, "year": 2025 },
+            "host": "Zhejiang University",
+            "location": "Hangzhou"
+        },
+        {
+            "title": "Quality Assurance in The Era of Natural Language Driven Programming",
+            "date": { "day": 15, "month": 6, "year": 2025 },
+            "host": "Shanghai Workshop on Structural AI",
+            "location": "Shanghai"
+        },
+        {
+            "title": "Quality Assurance in The Era of Natural Language Driven Programming",
+            "date": { "day": 14, "month": 5, "year": 2025 },
+            "host": "Shanghai Jiao Tong University",
+            "location": "Shanghai"
+        },
+        {
+            "title": "Quality Assurance in The Era of Natural Language Driven Programming",
+            "date": { "day": 14, "month": 5, "year": 2025 },
+            "host": "Fudan University",
+            "location": "Shanghai"
+        },
+        {
+            "title": "Synergizing LLMs with Program Analysis",
+            "date": { "day": 21, "month": 4, "year": 2025 },
+            "host": "JetBrains",
+            "location": "Online"
+        },
+        {
+            "title": "Synergizing Program Analysis with Machine Learning for Program Repair",
+            "date": { "day": 23, "month": 1, "year": 2025 },
+            "host": "Shonan Meeting 217 on Trusted Automatic Programming",
+            "location": "Japan"
+        },
+        {
+            "title": "Synergizing Program Analysis with Machine Learning for Program Repair",
+            "date": { "day": 8, "month": 10, "year": 2024 },
+            "host": "Peking University, PL Seminar Series",
+            "location": "Beijing, China"
+        },
+        {
+            "title": "Symbolic Execution of Datalog and its Application to Static Analysis Guided Program Repair",
+            "date": { "day": 22, "month": 11, "year": 2023 },
+            "host": "National University of Singapore, School of Computing CS Seminar",
+            "location": "Singapore"
+        },
+        {
+            "title": "Symbolic Execution of Datalog and its Application to Static Analysis Guided Program Repair",
+            "date": { "day": 17, "month": 11, "year": 2023 },
+            "host": "Imperial College London, Software Reliability Group Seminar",
+            "location": "London, United Kingdom"
+        },
+        {
+            "title": "Modus: A Datalog Dialect for Building Container Images",
+            "date": { "day": 22, "month": 12, "year": 2022 },
+            "host": "JetBrains, Open Reading Club",
+            "location": "Online"
+        },
+        {
+            "title": "To Build is to Query: Building Container Images with Datalog",
+            "date": { "month": 11, "year": 2022 },
+            "host": "Microsoft, MDCS Tech and Science Talks",
+            "location": "Online"
+        },
+        {
+            "title": "To Build is to Query: Building Container Images with Datalog",
+            "date": { "month": 8, "year": 2022 },
+            "host": "National University of Singapore, CS Seminar",
+            "location": "XXX"
+        },
+        {
+            "title": "Semantic Program Repair",
+            "date": { "month": 8, "year": 2020 },
+            "host": "NUS Computing Research Week",
+            "location": "Online"
+        },
+        {
+            "title": "Synthesis of Software Patches Using Symbolic Execution",
+            "date": { "month": 1, "year": 2020 },
+            "host": "62nd CREST Open Workshop on Program Repair and GI",
+            "location": "London, United Kingdom"
+        },
+        {
+            "title": "Automated Repair of Security Vulnerabilities",
+            "date": { "month": 9, "year": 2019 },
+            "host": "Shonan Meeting 160 on Fuzzing and Symbolic Execution",
+            "location": "Japan"
+        },
+        {
+            "title": "Semantic Program Repair",
+            "date": { "month": 7, "year": 2019 },
+            "host": "Southern University of Science and Technology (SUSTech)",
+            "location": "Shenzhen, China"
+        },
+        {
+            "title": "Semantic Program Repair",
+            "date": { "month": 5, "year": 2019 },
+            "host": "Imperial College London",
+            "location": "London, United Kingdom"
+        },
+        {
+            "title": "First-Order and Second-Order Symbolic Execution",
+            "date": { "month": 4, "year": 2019 },
+            "host": "JetBrains Research",
+            "location": "Saint-Petersburg, Russia"
+        },
+        {
+            "title": "Semantic Program Repair",
+            "date": { "month": 7, "year": 2018 },
+            "host": "University College London",
+            "location": "London, United Kingdom"
+        },
+        {
+            "title": "Semantic Program Repair Using a Reference Implementation",
+            "date": { "month": 4, "year": 2018 },
+            "host": "Dagstuhl Seminar 18151 on Program Equivalence",
+            "location": "Schloss Dagstuhl, Germany"
+        },
+        {
+            "title": "Semantics-based Program Repair",
+            "date": { "month": 4, "year": 2017 },
+            "host": "National University of Singapore",
+            "location": "Singapore"
+        },
+        {
+            "title": "Efficient Exploration of Patch Spaces for Automated Program Repair",
+            "date": { "month": 3, "year": 2017 },
+            "host": "JetBrains Research",
+            "location": "Saint-Petersburg, Russia"
+        },
+        {
+            "title": "Towards a Synergy of Syntax-based and Semantics-based Program Repair",
+            "date": { "month": 1, "year": 2017 },
+            "host": "Dagstuhl Seminar 17022 on Automated Program Repair",
+            "location": "Schloss Dagstuhl, Germany"
+        },
+        {
+            "title": "Constraint-based Automated Program Repair",
+            "date": { "month": 5, "year": 2016 },
+            "host": "Fondazione Bruno Kessler",
+            "location": "Trento, Italy"
+        }
+    ],
+    "service": [
+        {
+            "venue": "International Conference on Software Engineering",
+            "venue_short": "ICSE",
+            "role": "Program committee",
+            "year": 2026
+        },
+        {
+            "venue": "International Workshop on Language Models for Programming Languages (LMPL)",
+            "venue_short": "LMPL@SPLASH",
+            "role": "Organizer",
+            "year": 2025
+        },
+        {
+            "venue": "International Workshop on Automated Program Repair (APR)",
+            "venue_short": "APR@ICSE",
+            "role": "Organizer",
+            "year": 2025
+        },
+        {
+            "venue": "International Conference on Software Engineering",
+            "venue_short": "ICSE",
+            "role": "Program committee",
+            "year": 2025
+        },
+        {
+            "venue": "International Conference on the Foundations of Software Engineering",
+            "venue_short": "FSE",
+            "role": "Program committee",
+            "year": 2025
+        },
+        {
+            "venue": "International Symposium on Software Testing and Analysis",
+            "venue_short": "ISSTA",
+            "role": "Program committee",
+            "year": 2025
+        },
+        {
+            "venue": "International Conference on Automated Software Engineering",
+            "venue_short": "ASE",
+            "role": "Program committee",
+            "year": 2025
+        },
+        {
+            "venue": "International Workshop on Automated Program Repair (APR)",
+            "venue_short": "APR@ICSE",
+            "role": "Organizer",
+            "year": 2024
+        },
+        {
+            "venue": "International Conference on Software Engineering",
+            "venue_short": "ICSE",
+            "role": "Program committee",
+            "year": 2024
+        },
+        {
+            "venue": "International Conference on Automated Software Engineering",
+            "venue_short": "ASE",
+            "role": "Program committee",
+            "year": 2024
+        },
+        {
+            "venue": "International Conference on the Foundations of Software Engineering Student Research Competition",
+            "venue_short": "FSE SRC",
+            "role": "Program committee",
+            "year": 2024
+        },
+        {
+            "venue": "International Workshop on Automated Program Repair (APR)",
+            "venue_short": "APR@ICSE",
+            "role": "Organizer",
+            "year": 2023
+        },
+        {
+            "venue": "65nd CREST Open Workshop (COW) on Automated Program Repair and Genetic Improvement",
+            "venue_short": "CREST Open Workshop",
+            "role": "Organizer",
+            "year": 2023
+        },
+        {
+            "venue": "International Conference on the Foundations of Software Engineering",
+            "venue_short": "FSE",
+            "role": "Program committee",
+            "year": 2023
+        },
+        {
+            "venue": "International Workshop on Automated Program Repair (APR)",
+            "venue_short": "APR@ICSE",
+            "role": "Organizer",
+            "year": 2022
+        },
+        {
+            "venue": "International Conference on Software Engineering Student Research Competition",
+            "venue_short": "ICSE SRC",
+            "role": "Organizer",
+            "year": 2022
+        },
+        {
+            "venue": "International Conference on Software Engineering Demonstrations",
+            "venue_short": "ICSE Demo",
+            "role": "Program committee",
+            "year": 2022
+        },
+        {
+            "venue": "International Conference on the Foundations of Software Engineering Doctoral Symposium",
+            "venue_short": "FSE DS",
+            "role": "Program committee",
+            "year": 2022
+        },
+        {
+            "venue": "International Conference on the Foundations of Software Engineering",
+            "venue_short": "FSE",
+            "role": "Program committee",
+            "year": 2021
+        },
+        {
+            "venue": "International Conference on Automated Software Engineering",
+            "venue_short": "ASE",
+            "role": "Program committee",
+            "year": 2021
+        },
+        {
+            "venue": "International Conference on Automated Software Engineering Student Research Competition",
+            "venue_short": "ASE SRC",
+            "role": "Program committee",
+            "year": 2021
+        },
+        {
+            "venue": "International Workshop on Automated Program Repair (APR)",
+            "venue_short": "APR@ICSE",
+            "role": "Organizer",
+            "year": 2021
+        },
+        {
+            "venue": "International Workshop on Automated Program Repair (APR)",
+            "venue_short": "APR@ICSE",
+            "role": "Organizer",
+            "year": 2020
+        },
+        {
+            "venue": "62nd CREST Open Workshop (COW) on Automated Program Repair and Genetic Improvement",
+            "venue_short": "CREST Open Workshop",
+            "role": "Organizer",
+            "year": 2020
+        },
+        {
+            "venue": "International Conference on Automated Software Engineering",
+            "venue_short": "ASE",
+            "role": "Program committee",
+            "year": 2020
+        },
+        {
+            "venue": "International Conference on Automated Software Engineering",
+            "venue_short": "ASE",
+            "role": "Program committee",
+            "year": 2019
+        }
+    ],
+    "group": [
+        {
+            "name": "Yihan Dai",
+            "history": [
+                {
+                    "position": "PhD Student",
+                    "start": { "month": 9, "year": 2025 }
+                }
+            ],
+            "host": "Peking University",
+            "host_short": "PKU",
+            "alumni": false
+        },
+        {
+            "name": "Dimitrios Stamatios Bouras",
+            "history": [
+                {
+                    "position": "PhD Student",
+                    "start": { "month": 9, "year": 2025 }
+                },
+                {
+                    "position": "Research Assistant",
+                    "start": { "month": 10, "year": 2024 }
+                }
+            ],
+            "host": "Peking University",
+            "host_short": "PKU",
+            "alumni": false
+        },
+        {
+            "name": "Haoxiang Jia",
+            "history": [
+                {
+                    "position": "PhD Student",
+                    "start": { "month": 9, "year": 2024 }
+                }
+            ],
+            "host": "Peking University",
+            "host_short": "PKU",
+            "alumni": false,
+            "thesis": "Addressing LLM Hallucinations in Software Engineering Tasks"
+        },
+        {
+            "name": "Yu Liu",
+            "note": "Co-advisor with Abhik Roychoudhury",
+            "history": [
+                {
+                    "position": "PhD Student",
+                    "start": { "month": 9, "year": 2020 }
+                }
+            ],
+            "host": "National University of Singapore",
+            "host_short": "NUS",
+            "alumni": true,
+            "thesis": "A Static Program Repair Framework Based on Symbolic Datalog"
+        },
+        {
+            "name": "Nikhil Parasaram",
+            "note": "First supervisor. Second supervisor is Earl T. Barr",
+            "history": [
+                {
+                    "position": "PhD Student",
+                    "start": { "month": 9, "year": 2019 },
+                    "end": { "month": 10, "year": 2024 }
+                }
+            ],
+            "host": "University College London",
+            "host_short": "UCL",
+            "alumni": true,
+            "thesis": "Synergising Program Analysis and Machine Learning for Program Repair",
+            "first_job": "Uber (Programming Systems Team)"
+        }
+    ]
+}

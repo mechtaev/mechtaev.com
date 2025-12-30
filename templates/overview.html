@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="w-full max-w-360 mx-auto p-5">
+  <div class="grid justify-center justify-items-center sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 xl2:grid-cols-3 gap-4">
+
+    {% include 'bio_card.html' %}
+
+    {% include 'publications_card.html' %}
+
+    {% include 'news_card.html' %}
+
+    {% include 'group_card.html' %}    
+
+    {% include 'talks_card.html' %}
+
+    {% include 'service_card.html' %}
+    
+  </div>
+</div>
+{% endblock %}

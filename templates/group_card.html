@@ -1,0 +1,34 @@
+{% extends "overview_card.html" %}
+
+{% import 'utils.html' as utils %}
+
+{% block title %}
+Group
+{% endblock %}
+
+{% block content %}
+<div>
+  <!--
+  <div class="p-3 mt-2 mb-4 text-amber-900 outline-1 outline-amber-400 bg-amber-50" role="alert">
+    {{ utils.link('PhD positions', page_url('achievements')) }} available for September 2026 intake.
+  </div>
+  -->
+  <ul>
+    {% for m in group %}
+    {% if not m.alumni %}
+    <li class="flex py-1 first:pt-0 last:pb-0">
+      <div>
+        <p class="text-base/5"><span class="font-bold">{{ m.name }}</span></br><span class="find-italic">{{ m.history[0].position }} at {{ m.host_short }}</span></p>
+      </div>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>                
+</div>
+{% endblock %}
+
+{#
+{% block links %}
+{{ utils.link('View Alumni in Full CV', file_url('sergey_mechtaev_full_cv.pdf')) }}
+{% endblock %}
+#}

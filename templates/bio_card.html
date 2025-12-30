@@ -1,0 +1,42 @@
+{% extends "overview_card.html" %}
+
+{% import 'utils.html' as utils %}
+
+{% block title %}
+Sergey Mechtaev / 谢辽夏
+{% endblock %}
+
+{% block content %}
+<div class="flex flex-row gap-3 mb-3">
+  <img class="block h-48 outline outline-offset-2 outline-neutral-300" src={{ file_url('portrait.jpg') }} alt="Sergey Mechtaev's Portrait" />
+  <table class="table-auto border-separate border-spacing-x-2">
+    <tbody>
+      <tr class="align-top">
+        <td class="text-sm text-neutral-500 pt-1">Email</td>
+        <td>{{ utils.link(general.work_email, 'mailto:' + general.work_email) }}</td>
+      </tr>                    
+      <tr class="align-top">
+        <td class="text-sm text-neutral-500 pt-1">GitHub</td>
+        <td>{{ utils.link(general.github, 'https://' + general.github) }}</td>
+      </tr>                    
+      <tr class="align-top">
+        <td class="text-sm text-neutral-500 pt-1">Twitter</td>
+        <td>{{ utils.link(general.twitter, 'https://' + general.twitter) }}</td>
+      </tr>
+      <tr class="align-top">
+        <td class="text-sm text-neutral-500 pt-1">Address</td>
+        <td class="tracking-tight text-base/5 pt-1">{{ general.work_address }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>
+  {{ general.bio }}
+</p>
+{% endblock %}
+
+{% block links %}
+{# {{ utils.link('Full CV', file_url('sergey_mechtaev_full_cv.pdf')) }} #}
+{{ utils.link('Research Overview', page_url('research')) }}
+{{ utils.link('Achievements', page_url('achievements')) }}
+{% endblock %}

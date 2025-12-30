@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% import 'utils.html' as utils %}
+
+{% block content %}
+<div class="w-full max-w-222 mx-auto bg-white border-1 border-neutral-300 shadow-md mt-5 mb-5">
+  <div class="flex flex-col justify-between h-full">
+    <div>
+      <div class="font-sans pl-6 pr-6 pt-3 pb-3 border-b-1 border-neutral-300">
+        {% for d in page_context %}
+          {{ utils.link(d.title, d.path) }} / 
+        {% endfor %}
+        <span>{{ page_title }}</span>
+      </div>
+      <div class="font-serif pl-6 pr-6 pt-3 pb-3">
+        <div>
+          {% block inner %}{% endblock %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+

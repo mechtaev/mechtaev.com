@@ -1,0 +1,30 @@
+{% extends "page.html" %}
+
+{% import 'utils.html' as utils %}
+
+{% block inner %}
+<div class="mb-3">
+  <ul>
+    {% for p in publications %}
+    {% if loop.first or loop.previtem.year != p.year %}
+    <li class="flex py-2 text-xl font-sans text-neutral-500">{{ p.year }}</li>
+    {% endif %}
+    <li class="flex py-2 last:pb-0">
+      <div>
+        <p class="text-base/5"><span class="font-bold">{{ p.title }}</span><br/><span class="italic">{{ p.authors|map(attribute='name')|join(', ') }}</span><br/>{% if p.venue_short %} {{ p.venue_short }} {% else %} Draft {% endif %} {{ p.year }}</p>
+        {% if p.file or p.links %}
+        <div class="text-sm flex flex-row gap-3">
+          {% if p.file %}
+            {{ utils.link('[' + p.file_label + ']', file_url(p.file)) }}
+          {% endif %}
+          {% for l in p.links %}
+            {{ utils.link('[' + l.label + ']', l.url) }}
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>                
+</div>
+{% endblock %}

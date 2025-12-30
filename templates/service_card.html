@@ -1,0 +1,27 @@
+{% extends "overview_card.html" %}
+
+{% import 'utils.html' as utils %}
+
+{% block title %}
+Service
+{% endblock %}
+
+{% block content %}
+<div>
+  <ul>
+    {% for m in service[:5] %}
+    <li class="flex py-1 first:pt-0 last:pb-0">
+      <div>
+        <p class="text-base/5"><span class="font-bold">{{ m.venue_short }} {{ m.year }}</span></br><span class="find-italic">{{ m.role }}</span></p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>                
+</div>
+{% endblock %}
+
+{#
+{% block links %}
+{{ utils.link('View Alumni in Full CV', file_url('sergey_mechtaev_full_cv.pdf')) }}
+{% endblock %}
+#}
