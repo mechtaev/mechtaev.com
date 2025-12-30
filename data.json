@@ -128,7 +128,7 @@
     ],
     "publications": [
         {
-            "id": "mnimi",
+            "id": "just_tri_it",
             "title": "Reducing Hallucinations in LLM-Generated Code via Semantic Triangulation",
             "authors": [
                 { "name": "Yihan Dai", "authorship": "normal" },
