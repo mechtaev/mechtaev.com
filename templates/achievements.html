@@ -8,9 +8,9 @@
   <ul>
     {% for a in achievements %}
     {% if loop.first or loop.previtem.year != a.year %}
-    <li class="flex py-2 text-xl font-sans text-neutral-500">{{ a.year }}</li>
+    <li class="flex py-2 text-lg font-sans font-medium text-stone-400">{{ a.year }}</li>
     {% endif %}
-    <li class="flex py-2 last:pb-0">
+    <li class="flex py-2.5 last:pb-0">
       <div>
         {% if a.type == 'grant' %}
         <p class="text-base/5"><span class="font-bold">{{ a.funder }} {{ a.call }}</span><br/><span>{{ a.description }}.</span></p>
@@ -20,6 +20,6 @@
       </div>
     </li>
     {% endfor %}
-  </ul>                
+  </ul>
 </div>
 {% endblock %}

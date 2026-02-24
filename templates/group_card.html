@@ -16,14 +16,14 @@ Group
   <ul>
     {% for m in group %}
     {% if not m.alumni %}
-    <li class="flex py-1 first:pt-0 last:pb-0">
+    <li class="flex py-1.5 first:pt-0 last:pb-0">
       <div>
         <p class="text-base/5"><span class="font-bold">{{ m.name }}</span></br><span class="find-italic">{{ m.history[0].position }} at {{ m.host_short }}</span></p>
       </div>
     </li>
     {% endif %}
     {% endfor %}
-  </ul>                
+  </ul>
 </div>
 {% endblock %}
 

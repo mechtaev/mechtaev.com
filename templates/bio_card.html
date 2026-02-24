@@ -3,28 +3,28 @@
 {% import 'utils.html' as utils %}
 
 {% block title %}
-Sergey Mechtaev / 谢辽夏
+<span class="text-xl font-semibold normal-case tracking-normal text-stone-800">Sergey Mechtaev / 谢辽夏</span>
 {% endblock %}
 
 {% block content %}
 <div class="flex flex-col sm:flex-row gap-3 mb-3">
-  <img class="block h-48 outline outline-offset-2 outline-neutral-300 mx-auto sm:mx-0" src={{ file_url('portrait.jpg') }} alt="Sergey Mechtaev's Portrait" />
+  <img class="block h-48 shadow-sm mx-auto sm:mx-0" src={{ file_url('portrait.jpg') }} alt="Sergey Mechtaev's Portrait" />
   <table class="table-auto border-separate border-spacing-x-2">
     <tbody>
       <tr class="align-top">
-        <td class="text-sm text-neutral-500 pt-1">Email</td>
+        <td class="text-sm text-stone-500 pt-1">Email</td>
         <td>{{ utils.link(general.work_email, 'mailto:' + general.work_email) }}</td>
-      </tr>                    
+      </tr>
       <tr class="align-top">
-        <td class="text-sm text-neutral-500 pt-1">GitHub</td>
+        <td class="text-sm text-stone-500 pt-1">GitHub</td>
         <td>{{ utils.link(general.github, 'https://' + general.github) }}</td>
-      </tr>                    
+      </tr>
       <tr class="align-top">
-        <td class="text-sm text-neutral-500 pt-1">Twitter</td>
+        <td class="text-sm text-stone-500 pt-1">Twitter</td>
         <td>{{ utils.link(general.twitter, 'https://' + general.twitter) }}</td>
       </tr>
       <tr class="align-top">
-        <td class="text-sm text-neutral-500 pt-1">Address</td>
+        <td class="text-sm text-stone-500 pt-1">Address</td>
         <td class="tracking-tight text-base/5 pt-1">{{ general.work_address }}</td>
       </tr>
     </tbody>

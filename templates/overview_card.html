@@ -1,14 +1,14 @@
-<div class="w-full max-w-144 bg-white border-1 border-neutral-300 shadow-md">
+<div class="w-full max-w-144 bg-white border border-stone-200 shadow-sm hover:shadow-md transition-shadow">
   <div class="flex flex-col justify-between h-full">
     <div>
-      <p class="font-sans font-semibold text-xl border-b-1 border-neutral-300 pl-4 pr-4 pt-3 pb-3">{% block title %}{% endblock %}</p>
-      <div class="font-serif pl-4 pr-4 pt-3 pb-3">
+      <p class="font-sans font-semibold text-sm uppercase tracking-wide text-stone-500 p-5 pb-0">{% block title %}{% endblock %}</p>
+      <div class="font-serif p-5 pt-3">
         <div>
           {% block content %}{% endblock %}
         </div>
       </div>
     </div>
-    <div class="font-serif pl-4 pr-4 pb-3">
+    <div class="font-serif px-5 pb-5">
       <div class="flex flex-row gap-3">
         {% block links %}{% endblock %}
       </div>

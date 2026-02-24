@@ -7,13 +7,13 @@
   <ul>
     {% for p in publications %}
     {% if loop.first or loop.previtem.year != p.year %}
-    <li class="flex py-2 text-xl font-sans text-neutral-500">{{ p.year }}</li>
+    <li class="flex py-2 text-lg font-sans font-medium text-stone-400">{{ p.year }}</li>
     {% endif %}
-    <li class="flex py-2 last:pb-0">
+    <li class="flex py-2.5 last:pb-0">
       <div>
-        <p class="text-base/5"><span class="font-bold">{{ p.title }}</span><br/><span class="italic">{{ p.authors|map(attribute='name')|join(', ') }}</span><br/>{% if p.venue_short %} {{ p.venue_short }} {% else %} Draft {% endif %} {{ p.year }}</p>
+        <p class="text-base/5"><span class="font-bold">{{ p.title }}</span><br/><span class="italic">{{ p.authors|map(attribute='name')|join(', ') }}</span><br/><span class="text-stone-500">{% if p.venue_short %} {{ p.venue_short }} {% else %} Draft {% endif %} {{ p.year }}</span></p>
         {% if p.file or p.links %}
-        <div class="text-sm flex flex-row gap-3">
+        <div class="text-sm flex flex-row gap-3 mt-1">
           {% if p.file %}
             {{ utils.link('[' + p.file_label + ']', file_url(p.file)) }}
           {% endif %}
@@ -25,6 +25,6 @@
       </div>
     </li>
     {% endfor %}
-  </ul>                
+  </ul>
 </div>
 {% endblock %}

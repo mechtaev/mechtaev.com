@@ -12,7 +12,7 @@ News
     <tbody>
       {% for n in news[:9] %}
       <tr class="align-top">
-        <td class="text-sm text-neutral-500 pt-1">{{ '%02d' | format(n.date.day) }}/{{ '%02d' | format(n.date.month) }}/{{ n.date.year - 2000 }}</td>
+        <td class="text-sm text-stone-400 pt-1">{{ '%02d' | format(n.date.day) }}/{{ '%02d' | format(n.date.month) }}/{{ n.date.year - 2000 }}</td>
         <td><td class="text-base/5 pt-1">{{ n.text }}</td></td>
       </tr>
       {% endfor %}

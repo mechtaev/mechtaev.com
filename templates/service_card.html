@@ -10,13 +10,13 @@ Service
 <div>
   <ul>
     {% for m in service[:5] %}
-    <li class="flex py-1 first:pt-0 last:pb-0">
+    <li class="flex py-1.5 first:pt-0 last:pb-0">
       <div>
         <p class="text-base/5"><span class="font-bold">{{ m.venue_short }} {{ m.year }}</span></br><span class="find-italic">{{ m.role }}</span></p>
       </div>
     </li>
     {% endfor %}
-  </ul>                
+  </ul>
 </div>
 {% endblock %}
 
