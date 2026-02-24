@@ -1,0 +1,21 @@
+{% extends "overview_card.html" %}
+
+{% block title %}
+Teaching
+{% endblock %}
+
+{% block content %}
+<div>
+  <ul>
+    {% for c in teaching[:4] %}
+    <li class="py-1.5 first:pt-0 last:pb-0">
+      <p class="text-base/5">
+        {% if c.url %}<a class="font-bold hover:underline" href="{{ c.url }}">{{ c.title }}</a>{% else %}<span class="font-bold">{{ c.title }}</span>{% endif %}
+        <br><span>{{ c.institution }}</span>
+        <br><span class="text-stone-400 text-sm">{{ month_name(c.start.month) }} {{ c.start.year }}&ndash;{{ month_name(c.end.month) }} {{ c.end.year }}</span>
+      </p>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

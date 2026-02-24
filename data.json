@@ -1442,5 +1442,86 @@
             "thesis": "Synergising Program Analysis and Machine Learning for Program Repair",
             "first_job": "Uber (Programming Systems Team)"
         }
+    ],
+    "teaching": [
+        {
+            "id": "pku_softeng_25_26",
+            "title": "04834580 Software Engineering (Honor Track)",
+            "institution": "Peking University",
+            "start": { "month": 3, "year": 2026 },
+            "end": { "month": 5, "year": 2026 },
+            "role": "Lecturer",
+            "teaching_assistants": [ "Yihan Dai", "Dimitris Bouras" ]
+        },
+        {
+            "title": "04834580 Software Engineering (Honor Track)",
+            "institution": "Peking University",
+            "start": { "month": 2, "year": 2025 },
+            "end": { "month": 5, "year": 2025 },
+            "role": "Lecturer"
+        },
+        {
+            "title": "COMP0174 Practical Program Analysis",
+            "institution": "University College London",
+            "start": { "month": 1, "year": 2024 },
+            "end": { "month": 3, "year": 2024 },
+            "role": "Lecturer"
+        },
+        {
+            "title": "COMP0010 Software Engineering",
+            "institution": "University College London",
+            "start": { "month": 9, "year": 2023 },
+            "end": { "month": 12, "year": 2023 },
+            "role": "Lecturer"
+        },
+        {
+            "title": "COMP0174 Practical Program Analysis",
+            "institution": "University College London",
+            "start": { "month": 1, "year": 2023 },
+            "end": { "month": 3, "year": 2023 },
+            "role": "Lecturer"
+        },
+        {
+            "title": "COMP0010 Software Engineering",
+            "institution": "University College London",
+            "start": { "month": 9, "year": 2022 },
+            "end": { "month": 12, "year": 2022 },
+            "role": "Lecturer"
+        },
+        {
+            "title": "COMP0174 Practical Program Analysis",
+            "institution": "University College London",
+            "start": { "month": 1, "year": 2022 },
+            "end": { "month": 3, "year": 2022 },
+            "role": "Lecturer"
+        },
+        {
+            "title": "COMP0010 Software Engineering",
+            "institution": "University College London",
+            "start": { "month": 9, "year": 2021 },
+            "end": { "month": 12, "year": 2021 },
+            "role": "Lecturer"
+        },
+        {
+            "title": "COMP0010 Software Engineering",
+            "institution": "University College London",
+            "start": { "month": 9, "year": 2020 },
+            "end": { "month": 12, "year": 2020 },
+            "role": "Lecturer"
+        },
+        {
+            "title": "COMP0010 Software Engineering",
+            "institution": "University College London",
+            "start": { "month": 9, "year": 2019 },
+            "end": { "month": 12, "year": 2019 },
+            "role": "Lecturer"
+        },
+        {
+            "title": "CS4218 Software Testing and Debugging",
+            "institution": "National University of Singapore",
+            "start": { "month": 1, "year": 2015 },
+            "end": { "month": 5, "year": 2015 },
+            "role": "Teaching Assistant"
+        }
     ]
 }
