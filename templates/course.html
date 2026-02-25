@@ -1,0 +1,89 @@
+{% extends "page.html" %}
+
+{% import 'utils.html' as utils %}
+
+{% block inner %}
+<div class="mb-3">
+
+  {# Meta: institution · term · class times · TAs #}
+  <div class="mb-8 pb-5 border-b border-stone-100 font-sans text-stone-500 space-y-1">
+    <p class="text-sm">{{ month_name(course.start.month) }} {{ course.start.year }}&ndash;{{ month_name(course.end.month) }} {{ course.end.year }}</p>
+    {% if course.class_time %}
+    <p class="text-sm">
+      {% for ct in course.class_time %}<span>{{ ct.day }}, class&nbsp;{{ ct.from_class }}&ndash;{{ ct.to_class }}</span>{% if not loop.last %}<span class="mx-2 text-stone-300">&middot;</span>{% endif %}{% endfor %}{% if course.classroom %}<span class="mx-2 text-stone-300">&middot;</span><span>{{ course.classroom }}</span>{% endif %}
+    </p>
+    {% endif %}
+    {% if course.teaching_assistants %}
+    <p class="text-sm">Teaching assistants: {{ course.teaching_assistants | join(', ') }}</p>
+    {% endif %}
+  </div>
+
+  {# Description #}
+  {% if course.description %}
+  <p class="mb-8 leading-relaxed text-stone-700">{{ course.description }}</p>
+  {% endif %}
+
+  {# Schedule #}
+  {% if course.schedule %}
+  <div>
+    {% set ns = namespace(prev_month=none) %}
+    {% for session in course.schedule %}
+    {% set is_holiday = session.content and 'holidays' in session.content %}
+
+    {# Month header #}
+    {% if ns.prev_month != session.date.month %}
+    {% set ns.prev_month = session.date.month %}
+    <div class="{% if not loop.first %}mt-6{% endif %} mb-1 pt-1">
+      <span class="font-sans font-medium text-stone-500 text-base">{{ month_name(session.date.month) }} {{ session.date.year }}</span>
+    </div>
+    {% endif %}
+
+    {# Session row #}
+    <div class="flex gap-5 py-2.5 border-b border-stone-100 last:border-0 {% if is_holiday %}opacity-40{% endif %}">
+
+      {# Date #}
+      <div class="w-10 shrink-0 text-right pt-0.5">
+        <div class="font-sans font-medium text-stone-700 text-sm leading-none">{{ session.date.day }}</div>
+        <div class="font-sans text-stone-400 text-xs mt-0.5">{{ weekday_name(session.date) }}</div>
+      </div>
+
+      {# Content #}
+      <div class="flex-1 min-w-0">
+        {% if is_holiday %}
+          <span class="text-sm font-sans text-stone-400 italic">No class</span>
+        {% else %}
+          {% if session.content %}
+          <div class="flex flex-wrap gap-1.5 mb-1.5">
+            {% for tag in session.content %}
+            <span class="font-sans text-xs text-stone-400 bg-stone-100 px-1.5 py-0.5 rounded">{{ tag }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+          {% if session.materials %}
+          <ul>
+            {% for m in session.materials %}
+            <li class="text-base/6">
+              {% if m.file %}
+                {{ utils.link(m.title, file_url(m.file)) }}{% if m.tentative %}<span class="text-stone-400 text-sm"> (tentative)</span>{% endif %}
+              {% elif m.tentative %}
+                <span class="text-stone-400">{{ m.title }} <span class="text-sm">(tentative)</span></span>
+              {% else %}
+                <span>{{ m.title }}</span>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          {% if session.assignment %}
+          <p class="mt-1 text-sm text-stone-400 italic leading-snug">{{ session.assignment }}</p>
+          {% endif %}
+        {% endif %}
+      </div>
+
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+</div>
+{% endblock %}

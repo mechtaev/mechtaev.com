@@ -8,7 +8,7 @@
     <div>
       <div class="font-sans text-sm text-stone-400 pl-6 pr-6 pt-4 pb-3">
         {% for d in page_context %}
-          {{ utils.link(d.title, d.path) }} /
+          {% if d.linked %}{{ utils.link(d.title, d.path) }}{% else %}<span>{{ d.title }}</span>{% endif %} /
         {% endfor %}
         <span class="text-stone-600">{{ page_title }}</span>
       </div>

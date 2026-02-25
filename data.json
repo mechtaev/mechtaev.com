@@ -1448,10 +1448,260 @@
             "id": "pku_softeng_25_26",
             "title": "04834580 Software Engineering (Honor Track)",
             "institution": "Peking University",
+            "academic_year": "2025-2026",
+            "class_time": [
+                { "day": "Monday", "from_class": 10, "to_class": 11 },
+                { "day": "Thursday", "from_class": 3, "to_class": 4 }
+            ],
+            "classroom": "一教303",
+            "semester": 2,
             "start": { "month": 3, "year": 2026 },
-            "end": { "month": 5, "year": 2026 },
+            "end": { "month": 6, "year": 2026 },
             "role": "Lecturer",
-            "teaching_assistants": [ "Yihan Dai", "Dimitris Bouras" ]
+            "teaching_assistants": [ "Yihan Dai", "Dimitris Bouras" ],
+            "description": "This course offers an introduction to software engineering, spanning a broad array of topics and employing a problem-based learning approach. Central to the course is a practical group project, where students apply modern software development principles and tools. The course discusses the software development lifecycle, with an exploration of Agile methodologies and DevOps practices. Students will gain a foundation in software design principles, such as abstraction mechanisms and design patterns, and how they are realized in procedural, object-oriented and functional programming paradigms. A strong emphasis is placed on quality assurance, equipping students with robust techniques for software testing, debugging, and maintaining high code reliability. The course examines program analysis and verification through both static and dynamic analysis methods. Advanced topics, such as AI-driven development tools, expose students to contemporary software engineering research.",
+            "schedule": [
+                {
+                    "date": { "year": 2026, "month": 3, "day": 2 },
+                    "content": [ "lecture" ],
+                    "materials": [
+                        { "title": "Course Overview" },
+                        { "title": "Introduction to Software Engineering" },
+                        { "title": "UNIX Shell" },
+                        { "title": "Assessment Tasks & Marking Criteria" },
+                        { "title": "Individual Report Template" }
+                    ],
+                    "assignment": "Form groups of three and select presentation slots by March 10"
+                },
+                {
+                    "date": { "year": 2026, "month": 3, "day": 5 },
+                    "content": [ "lecture" ],
+                    "materials": [
+                        { "title": "Software Development Lifecycle" },
+                        { "title": "Agile Methods" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 3, "day": 9 },
+                    "content": [ "lecture" ],
+                    "materials": [
+                        { "title": "Git" },
+                        { "title": "DevOps" }
+                    ],
+                    "assignment": "Access coursework repository, discuss branching model and merge policy with your teammates."
+                },
+                {
+                    "date": { "year": 2026, "month": 3, "day": 12 },
+                    "content": [ "lecture", "Q&A session" ],
+                    "materials": [
+                        { "title": "Docker" }
+                    ],
+                    "assignment": "Optionally, setup GitHub actions."
+                },
+                {
+                    "date": { "year": 2026, "month": 3, "day": 16 },
+                    "content": [ "lecture", "student presentations" ],
+                    "materials": [
+                        { "title": "Modeling" }
+                    ],
+                    "assignment": "Experiment with Mermaid diagrams to model important parts of your project."
+                },
+                {
+                    "date": { "year": 2026, "month": 3, "day": 19 },
+                    "content": [ "lecture", "Q&A session" ],
+                    "materials": [
+                        { "title": "Design Principles" }
+                    ],
+                    "assignment": "Restructure your code according to studied design principles."
+                },
+                {
+                    "date": { "year": 2026, "month": 3, "day": 23 },
+                    "content": [ "lecture", "student presentations" ],
+                    "materials": [
+                        { "title": "Abstraction Mechanisms" }
+                    ],
+                    "assignment": "Identify relevant abstraction mechanisms in your language of choice to support design principles."
+                },
+                {
+                    "date": { "year": 2026, "month": 3, "day": 26 },
+                    "content": [ "lecture", "Q&A session" ],
+                    "materials": [
+                        { "title": "Visitor Design Pattern" }
+                    ],
+                    "assignment": "Apply Visitor design pattern to your project."
+                },
+                {
+                    "date": { "year": 2026, "month": 3, "day": 30 },
+                    "content": [ "lecture", "student presentations" ],
+                    "materials": [
+                        { "title": "Creational & Structural Patterns" }
+                    ],
+                    "assignment": "Apply appropriate creational and structural patterns to your code."
+                },
+                {
+                    "date": { "year": 2026, "month": 4, "day": 2 },
+                    "content": [ "lecture", "Q&A session" ],
+                    "materials": [
+                        { "title": "Behavioral Patterns" }
+                    ],
+                    "assignment": "Apply appropriate behavioral patterns to your code."
+                },
+                {
+                    "date": { "year": 2026, "month": 4, "day": 6 },
+                    "content": [ "lecture", "student presentations" ],
+                    "materials": [
+                        { "title": "Parsing" },
+                        { "title": "Example: Java + ANTRL" },
+                        { "title": "Example: Python + Lark" },
+                        { "title": "Example: Recursive Descent" },
+                        { "title": "Example: Parser Combinators" }
+                    ],
+                    "assignment": "Implement a parser of your choice."
+                },
+                {
+                    "date": { "year": 2026, "month": 4, "day": 9 },
+                    "content": [ "lecture", "Q&A session" ],
+                    "materials": [
+                        { "title": "Functional Programming Patterns" }
+                    ],
+                    "assignment": "Optionally, apply functional programming patterns in your code."
+                },
+                {
+                    "date": { "year": 2026, "month": 4, "day": 13 },
+                    "content": [ "lecture", "student presentations" ],
+                    "materials": [
+                        { "title": "Testing" },
+                        { "title": "xUnit" }
+                    ],
+                    "assignment": "Write unit tests for your project."
+                },
+                {
+                    "date": { "year": 2026, "month": 4, "day": 16 },
+                    "content": [ "lecture", "Q&A session" ],
+                    "materials": [
+                        { "title": "Property-Based Testing" },
+                        { "title": "Symbolic Execution" }
+                    ],
+                    "assignment": "Optionally, apply property-based testing and symbolic execution to test your project."
+                },
+                {
+                    "date": { "year": 2026, "month": 4, "day": 20 },
+                    "content": [ "lecture", "student presentations" ],
+                    "materials": [
+                        { "title": "Dynamic Analysis & Fuzzing" }
+                    ],
+                    "assignment": "Optionally, apply fuzzing to your project."
+                },
+                {
+                    "date": { "year": 2026, "month": 4, "day": 23 },
+                    "content": [ "lecture", "Q&A session" ],
+                    "materials": [
+                        { "title": "Debugging" },
+                        { "title": "Error Handling" }
+                    ],
+                    "assignment": "Design robust error handling for your project."
+                },
+                {
+                    "date": { "year": 2026, "month": 4, "day": 27 },
+                    "content": [ "lecture", "student presentations" ],
+                    "materials": [
+                        { "title": "Mutation Testing" },
+                        { "title": "Metamorphic Testing" }
+                    ],
+                    "assignment": "Optionally, apply mutation and metamorphic testing to your project."
+                },
+                {
+                    "date": { "year": 2026, "month": 4, "day": 30 },
+                    "content": [ "lecture", "Q&A session" ],
+                    "materials": [
+                        { "title": "Code Smells & Anti-Patterns" }
+                    ],
+                    "assignment": "Analyze your code for the presence of smells and anti-patterns."
+                },
+                {
+                    "date": { "year": 2026, "month": 5, "day": 4 },
+                    "content": [ "holidays" ]
+                },
+                {
+                    "date": { "year": 2026, "month": 5, "day": 7 },
+                    "content": [ "lecture", "Q&A session" ],
+                    "materials": [
+                        { "title": "Code Style & Documentation" }
+                    ],
+                    "assignment": "Maintain coding style compliance and write system documentation where necessary."
+                },
+                {
+                    "date": { "year": 2026, "month": 5, "day": 11 },
+                    "content": [ "lecture", "student presentations" ],
+                    "materials": [
+                        { "title": "UNIX Environment" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 5, "day": 14 },
+                    "content": [ "lecture", "Q&A session" ],
+                    "materials": [
+                        { "title": "Software Security" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 5, "day": 18 },
+                    "content": [ "lecture", "student presentations" ],
+                    "materials": [
+                        { "title": "LLMs for Code" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 5, "day": 21 },
+                    "content": [ "lecture", "Q&A session" ],
+                    "materials": [
+                        { "title": "Coding Agents" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 5, "day": 25 },
+                    "content": [ "lecture", "student presentations" ],
+                    "materials": [
+                        { "title": "Program Analysis" },
+                        { "title": "Abstract Interpretation" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 5, "day": 28 },
+                    "content": [ "lecture", "Q&A session" ],
+                    "materials": [
+                        { "title": "Formal Verification" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 6, "day": 1 },
+                    "content": [ "lecture", "student presentations" ],
+                    "materials": [
+                        { "title": "Data Flow Analysis" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 6, "day": 4 },
+                    "content": [ "lecture", "Q&A session" ],
+                    "materials": [
+                        { "title": "Program Analysis With Datalog" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 6, "day": 8 },
+                    "content": [ "lecture", "student presentations" ],
+                    "materials": [
+                        { "title": "AI for Code Research Overview" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 6, "day": 11 },
+                    "content": [ "lecture", "Q&A session" ],
+                    "materials": [
+                        { "title": "Software Engineering Research Overview" }
+                    ]
+                }
+            ]
         },
         {
             "title": "04834580 Software Engineering (Honor Track)",

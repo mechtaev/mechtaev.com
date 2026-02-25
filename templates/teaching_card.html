@@ -10,7 +10,7 @@ Teaching
     {% for c in teaching[:4] %}
     <li class="py-1.5 first:pt-0 last:pb-0">
       <p class="text-base/5">
-        {% if c.url %}<a class="font-bold hover:underline" href="{{ c.url }}">{{ c.title }}</a>{% else %}<span class="font-bold">{{ c.title }}</span>{% endif %}
+        {% if c.id %}<a class="font-bold text-teal-700 underline decoration-teal-300 underline-offset-2 hover:decoration-teal-600 transition-colors" href="{{ page_url(c.id) }}">{{ c.title }}</a>{% else %}<span class="font-bold">{{ c.title }}</span>{% endif %}
         <br><span>{{ c.institution }}</span>
         <br><span class="text-stone-400 text-sm">{{ month_name(c.start.month) }} {{ c.start.year }}&ndash;{{ month_name(c.end.month) }} {{ c.end.year }}</span>
       </p>
