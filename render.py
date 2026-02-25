@@ -1,4 +1,6 @@
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from markupsafe import Markup
+import markdown as markdown_lib
 import json
 import shutil
 import os
@@ -79,9 +81,15 @@ env = Environment(
 def file_url(file):
     return f"/files/{file}"
 
+def include_markdown(filename):
+    with open(Path("content") / filename, "r") as f:
+        content = f.read()
+    return Markup(markdown_lib.markdown(content))
+
 env.globals["file_url"] = file_url
 env.globals["page_url"] = page_url
 env.globals["month_name"] = month_name
+env.globals["include_markdown"] = include_markdown
 
 def render(output_dir, data):
     for id, config in structure.items():

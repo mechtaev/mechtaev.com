@@ -1,25 +1,7 @@
 {% extends "page.html" %}
 
-{% import 'utils.html' as utils %}
-
 {% block inner %}
-<div>
-
-  <div class="space-y-4 mb-4">
-  <h1 class="text-xl font-semibold font-sans text-stone-700">Quality Assurance in The Era of Natural Language Driven Programming (2023-Present)</h1>
-
-  <p>Software engineering is entering a new era in which AI - especially large language models (LLMs) - is becoming a core contributor to development. Alongside major opportunities, this shift raises challenges in ensuring the correctness, security, and maintainability of AI-generated code. LLM-driven workflows also introduce unique challenges: natural-language artifacts (e.g., chats with assistants, GitHub issues, comments, documentation) increasingly shape code generation and modification. However, traditional program analysis and verification are not designed to reason about informal natural-language requirements.</p>
-
-  <p>Our research improves the quality of LLM-generated code across multiple stages of the software development lifecycle. SpecFix (ASE'15) is the first system to automatically detect and repair ambiguity - i.e., inconsistent interpretations - in natural-language requirements used for code generation. HoarePrompt (ICSE'26) is the first approach to strengthen LLM reasoning about program correctness for code review by combining ideas from formal verification and natural-language processing. Just-Tri-It (draft'26) targets practical code generation settings when formal specifications is not available by verifying cross-task consistency, which provably increases the probability of sampling correct code from an LLM.</p>
-
-  <h1 class="text-xl font-semibold font-sans text-stone-700">Semantic Program Repair (2015-2023)</h1>
-
-  <p> Automated program repair (APR) automatically modifies faulty programs to remove observed failures. It can reduce debugging and maintenance costs, with applications in software security, developer tooling, and education. Key challenges are (i) scalability and scope - repairing diverse bug classes in large, real-world systems - and (ii) patch quality - producing patches consistent with developer intent and quality constraints. Early methods relied on heuristic search that largely ignored program semantics, often yielding low-quality patches, or they did not scale. My research on semantic program repair addresses these limitations by leveraging program analysis to identify and eliminate the root causes of defects.</p>
-
-  <p>Angelix (ICSE'16) was the first scalable semantic APR system for large, real-world programs. It uses symbolic execution to infer a specification of intended behavior, called angelic forest, and then applies program synthesis to construct a repair consistent with that specification. Subsequent systems - F1X (TOSEM'18), SE-ESOC (FSE'18), and Trident (TSE'21) - expanded the scope of semantic repair without sacrificing scalability by mitigating symbolic execution path explosion in loop-intensive code and enabling synthesis of more complex patches with side effects.</p>
-
-  <p>To increase developer trust in generated patches, we proposed property-guided repair methods that provide stronger correctness guarantees than test-based approaches. SemGraft (ICSE'18) was the first to leverage a reference implementation - an alternative realization of the same functionality - to synthesize provably correct patches. Symlog (FSE'23) introduced the first general-purpose static repair framework, enabling repairs from arbitrary Datalog-expressed static-analysis properties. Rete (ICSE'23) combines program analysis and machine learning to learn a project-agnostic representation of program namespaces for prioritizing variables during patch synthesis.</p>
-  </div>
-
+<div class="prose">
+  {{ include_markdown('research.md') }}
 </div>
 {% endblock %}
