@@ -1465,11 +1465,11 @@
                     "date": { "year": 2026, "month": 3, "day": 2 },
                     "content": [ "lecture" ],
                     "materials": [
-                        { "title": "Course Overview" },
-                        { "title": "Introduction to Software Engineering" },
-                        { "title": "UNIX Shell" },
-                        { "title": "Assessment Tasks & Marking Criteria" },
-                        { "title": "Individual Report Template" }
+                        { "title": "Course Overview", "file": "pku-04834580-softeng-25_26-course_overview.pdf" },
+                        { "title": "Introduction to Software Engineering", "file": "pku-04834580-softeng-25_26-introduction_to_software_engineering.pdf" },
+                        { "title": "UNIX Shell", "file": "pku-04834580-softeng-25_26-unix_shell.pdf" },
+                        { "title": "Assessment Tasks & Marking Criteria", "file": "pku-04834580-softeng-25_26-assessment-tasks-and-marking-criteria.pdf" },
+                        { "title": "Individual Report Template", "file": "pku-04834580-softeng-25_26-individual-report-template.docx" }
                     ],
                     "assignment": "Form groups of three and select presentation slots by March 10"
                 },
