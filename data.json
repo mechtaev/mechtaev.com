@@ -193,6 +193,9 @@
                     "label": "Artifact"
                 }
             ],
+            "awards": [
+                "ACM SIGSOFT Distinguished Paper Award"
+            ],
             "selected": false
         },
         {
@@ -745,6 +748,10 @@
     ],
     "news": [
         {
+            "date": { "day": 3, "month": 3, "year": 2026 },
+ 	          "text": "HoarePrompt [ICSE'26] received ACM SIGSOFT Distinguished Paper Award."
+        },
+        {
             "date": { "day": 30, "month": 11, "year": 2025 },
  	          "text": "A paper on caching LLM workflows has been accepted to LLM4Code@ICSE'26."
         },
@@ -990,6 +997,18 @@
         }
     ],
     "achievements": [
+        {
+            "type": "award",
+            "title": "ACM SIGSOFT Distinguished Paper Award",
+            "description": "For ICSE'26 paper \"HoarePrompt: Structural Reasoning About Program Correctness in Natural Language\".",
+            "year": 2026
+        },
+        {
+            "type": "grant",
+            "funder": "UCL-PKU",
+            "call": "Peking University-University College London Strategic Partner Funds",
+            "description": "For the proposal \"Prompt Compression for Efficient and Sustainable AI-Driven Software Engineering\" with Prof. Federica Sarro"
+        },
         {
             "type": "grant",
             "funder": "NSFC/国家自然科学基金",
