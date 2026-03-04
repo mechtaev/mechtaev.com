@@ -1494,9 +1494,10 @@
                     "date": { "year": 2026, "month": 3, "day": 5 },
                     "content": [ "lecture" ],
                     "materials": [
-                        { "title": "Software Development Lifecycle" },
-                        { "title": "Agile Methods" }
-                    ]
+                        { "title": "Software Development Lifecycle", "file": "pku-04834580-softeng-25_26-development-lifecycle.pdf" },
+                        { "title": "Agile Methods", "file": "pku-04834580-softeng-25_26-agile-methods.pdf" }
+                    ],
+                    "assignment": "Meet with your team to choose a development process. Agree on communication channels, meeting cadence, and how you will plan/track progress."
                 },
                 {
                     "date": { "year": 2026, "month": 3, "day": 9 },
