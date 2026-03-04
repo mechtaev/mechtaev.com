@@ -252,8 +252,6 @@
             "venue": "International Conference on Software Engineering",
             "venue_short": "ICSE",
             "year": 2025,
-            "file": "icse25.pdf",
-            "file_label": "Postprint",
             "links": [
                 {
                     "url": "https://arxiv.org/pdf/2404.05520",
