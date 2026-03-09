@@ -1503,8 +1503,8 @@
                     "date": { "year": 2026, "month": 3, "day": 9 },
                     "content": [ "lecture" ],
                     "materials": [
-                        { "title": "Git", "files": "pku-04834580-softeng-25_26-git.pdf" },
-                        { "title": "DevOps", "files": "pku-04834580-softeng-25_26-devops.pdf" }
+                        { "title": "Git", "file": "pku-04834580-softeng-25_26-git.pdf" },
+                        { "title": "DevOps", "file": "pku-04834580-softeng-25_26-devops.pdf" }
                     ],
                     "assignment": "Access coursework repository, discuss branching model and merge policy with your teammates."
                 },
