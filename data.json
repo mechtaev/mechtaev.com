@@ -1512,7 +1512,7 @@
                     "date": { "year": 2026, "month": 3, "day": 12 },
                     "content": [ "lecture", "Q&A session" ],
                     "materials": [
-                        { "title": "Docker" }
+                        { "title": "Docker", "file": "pku-04834580-softeng-25_26-docker.pdf" }
                     ],
                     "assignment": "Optionally, setup GitHub actions."
                 },
