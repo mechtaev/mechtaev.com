@@ -1514,7 +1514,7 @@
                     "materials": [
                         { "title": "Docker", "file": "pku-04834580-softeng-25_26-docker.pdf" }
                     ],
-                    "assignment": "Optionally, setup GitHub actions."
+                    "assignment": "Optionally, optimize your Dockerfile, and setup GitHub actions."
                 },
                 {
                     "date": { "year": 2026, "month": 3, "day": 16 },
