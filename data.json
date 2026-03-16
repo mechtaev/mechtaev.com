@@ -11,7 +11,7 @@
         "dblp": "https://dblp.uni-trier.de/pers/hd/m/Mechtaev:Sergey"
         
     },
-    "education": [
+   "education": [
         {
             "university": "National University of Singapore",
             "faculty": "School of Computing",
@@ -1520,7 +1520,7 @@
                     "date": { "year": 2026, "month": 3, "day": 16 },
                     "content": [ "lecture", "student presentations" ],
                     "materials": [
-                        { "title": "Modeling" }
+                        { "title": "Modeling", "file": "pku-04834580-softeng-25_26-modeling.pdf" }
                     ],
                     "assignment": "Experiment with Mermaid diagrams to model important parts of your project."
                 },
