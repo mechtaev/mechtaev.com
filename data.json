@@ -1528,7 +1528,7 @@
                     "date": { "year": 2026, "month": 3, "day": 19 },
                     "content": [ "lecture", "Q&A session" ],
                     "materials": [
-                        { "title": "Design Principles" }
+                        { "title": "Design Principles", "file": "pku-04834580-softeng-25_26-design-principles.pdf" }
                     ],
                     "assignment": "Restructure your code according to studied design principles."
                 },
