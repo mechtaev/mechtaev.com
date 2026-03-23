@@ -128,6 +128,22 @@
     ],
     "publications": [
         {
+            "id": "gordian",
+            "title": "Defusing Logic Bombs in Symbolic Execution with LLM-Generated Ghost Code",
+            "authors": [
+                { "name": "Dimitrios Stamatios Bouras", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "normal" }
+            ],
+            "year": 2026,
+            "selected": false,
+            "links": [
+                {
+                    "url": "https://arxiv.org/abs/2603.19239",
+                    "label": "Preprint"
+                }
+            ]
+        },
+        {
             "id": "just_tri_it",
             "title": "Reducing Hallucinations in LLM-Generated Code via Semantic Triangulation",
             "authors": [
