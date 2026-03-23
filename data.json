@@ -1552,7 +1552,7 @@
                     "date": { "year": 2026, "month": 3, "day": 23 },
                     "content": [ "lecture", "student presentations" ],
                     "materials": [
-                        { "title": "Abstraction Mechanisms" }
+                        { "title": "Abstraction Mechanisms", "file": "pku-04834580-softeng-25_26-abstraction_mechanisms.pdf" }
                     ],
                     "assignment": "Identify relevant abstraction mechanisms in your language of choice to support design principles."
                 },
