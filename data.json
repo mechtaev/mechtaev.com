@@ -1560,7 +1560,7 @@
                     "date": { "year": 2026, "month": 3, "day": 26 },
                     "content": [ "lecture", "Q&A session" ],
                     "materials": [
-                        { "title": "Visitor Design Pattern" }
+                        { "title": "Visitor Design Pattern", "file": "pku-04834580-softeng-25_26-visitor.pdf" }
                     ],
                     "assignment": "Apply Visitor design pattern to your project."
                 },
