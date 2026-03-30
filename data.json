@@ -1568,7 +1568,7 @@
                     "date": { "year": 2026, "month": 3, "day": 30 },
                     "content": [ "lecture", "student presentations" ],
                     "materials": [
-                        { "title": "Creational & Structural Patterns" }
+                        { "title": "Creational & Structural Patterns", "file": "pku-04834580-softeng-25_26-creational_structural_patterns.pdf" }
                     ],
                     "assignment": "Apply appropriate creational and structural patterns to your code."
                 },
