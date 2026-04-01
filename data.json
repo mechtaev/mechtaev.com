@@ -128,11 +128,28 @@
     ],
     "publications": [
         {
+            "id": "swezze",
+            "title": "Compressing Code Context for LLM-based Issue Resolution",
+            "authors": [
+                { "name": "Haoxiang Jia", "authorship": "normal" },
+                { "name": "Earl T. Barr", "authorship": "normal" },                
+                { "name": "Sergey Mechtaev", "authorship": "corresponding" }
+            ],
+            "year": 2026,
+            "selected": false,
+            "links": [
+                {
+                    "url": "https://arxiv.org/abs/2603.28119",
+                    "label": "Preprint"
+                }
+            ]
+        },
+        {
             "id": "gordian",
             "title": "Defusing Logic Bombs in Symbolic Execution with LLM-Generated Ghost Code",
             "authors": [
                 { "name": "Dimitrios Stamatios Bouras", "authorship": "normal" },
-                { "name": "Sergey Mechtaev", "authorship": "normal" }
+                { "name": "Sergey Mechtaev", "authorship": "corresponding" }
             ],
             "year": 2026,
             "selected": false,
@@ -151,7 +168,7 @@
                 { "name": "Sijie Liang", "authorship": "normal" },
                 { "name": "Haotian Xu", "authorship": "normal" },
                 { "name": "Peichu Xie", "authorship": "normal" },
-                { "name": "Sergey Mechtaev", "authorship": "normal" }
+                { "name": "Sergey Mechtaev", "authorship": "corresponding" }
             ],
             "year": 2026,
             "selected": false,
@@ -159,6 +176,10 @@
                 {
                     "url": "https://arxiv.org/abs/2511.12288",
                     "label": "Preprint"
+                },
+                {
+                    "url": "github.com/msv-lab/just-tri-it",
+                    "label": "Artifact"
                 }
             ]
         },
@@ -308,7 +329,10 @@
             "year": 2024,
             "file": "aprcomp24.pdf",
             "file_label": "Postprint",
-            "selected": false
+            "awards": [
+                "Winner of APR-COMP 2024 Functional Errors/C Track"
+            ],
+            "selected": false            
         },
         {
             "id": "bassist",
@@ -332,7 +356,7 @@
                 }
             ],
             "awards": [
-                "Winner of APR-COMP 2024 Functional Errors/C Track"
+                "ACM SIGSOFT Distinguished Paper Award"
             ],
             "selected": false
         },
@@ -389,9 +413,6 @@
             "year": 2023,
             "file": "icse23-nier.pdf",
             "file_label": "Postprint",
-            "awards": [
-                "ACM SIGSOFT Distinguished Paper Award"
-            ],
             "selected": false
         },
         {
