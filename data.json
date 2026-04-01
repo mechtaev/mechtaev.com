@@ -1603,7 +1603,11 @@
                 },
                 {
                     "date": { "year": 2026, "month": 4, "day": 6 },
-                    "content": [ "lecture", "student presentations" ],
+                    "content": [ "holidays" ]
+                },
+                {
+                    "date": { "year": 2026, "month": 4, "day": 9 },
+                    "content": [ "lecture", "Q&A session" ],
                     "materials": [
                         { "title": "Parsing" },
                         { "title": "Example: Java + ANTRL" },
@@ -1614,16 +1618,16 @@
                     "assignment": "Implement a parser of your choice."
                 },
                 {
-                    "date": { "year": 2026, "month": 4, "day": 9 },
-                    "content": [ "lecture", "Q&A session" ],
+                    "date": { "year": 2026, "month": 4, "day": 13 },
+                    "content": [ "lecture", "student presentations" ],
                     "materials": [
                         { "title": "Functional Programming Patterns" }
                     ],
                     "assignment": "Optionally, apply functional programming patterns in your code."
                 },
                 {
-                    "date": { "year": 2026, "month": 4, "day": 13 },
-                    "content": [ "lecture", "student presentations" ],
+                    "date": { "year": 2026, "month": 4, "day": 16 },
+                    "content": [ "lecture", "Q&A session" ],
                     "materials": [
                         { "title": "Testing" },
                         { "title": "xUnit" }
@@ -1631,25 +1635,25 @@
                     "assignment": "Write unit tests for your project."
                 },
                 {
-                    "date": { "year": 2026, "month": 4, "day": 16 },
-                    "content": [ "lecture", "Q&A session" ],
+                    "date": { "year": 2026, "month": 4, "day": 20 },
+                    "content": [ "lecture", "student presentations" ],
                     "materials": [
                         { "title": "Property-Based Testing" },
                         { "title": "Symbolic Execution" }
                     ],
-                    "assignment": "Optionally, apply property-based testing and symbolic execution to test your project."
+                    "assignment": "Optionally, apply property-based testing and symbolic execution to test your project"
                 },
                 {
-                    "date": { "year": 2026, "month": 4, "day": 20 },
-                    "content": [ "lecture", "student presentations" ],
+                    "date": { "year": 2026, "month": 4, "day": 23 },
+                    "content": [ "lecture", "Q&A session" ],
                     "materials": [
                         { "title": "Dynamic Analysis & Fuzzing" }
                     ],
                     "assignment": "Optionally, apply fuzzing to your project."
                 },
                 {
-                    "date": { "year": 2026, "month": 4, "day": 23 },
-                    "content": [ "lecture", "Q&A session" ],
+                    "date": { "year": 2026, "month": 4, "day": 27 },
+                    "content": [ "lecture", "student presentations" ],
                     "materials": [
                         { "title": "Debugging" },
                         { "title": "Error Handling" }
@@ -1657,21 +1661,13 @@
                     "assignment": "Design robust error handling for your project."
                 },
                 {
-                    "date": { "year": 2026, "month": 4, "day": 27 },
-                    "content": [ "lecture", "student presentations" ],
+                    "date": { "year": 2026, "month": 4, "day": 30 },
+                    "content": [ "lecture", "Q&A session" ],
                     "materials": [
                         { "title": "Mutation Testing" },
                         { "title": "Metamorphic Testing" }
                     ],
                     "assignment": "Optionally, apply mutation and metamorphic testing to your project."
-                },
-                {
-                    "date": { "year": 2026, "month": 4, "day": 30 },
-                    "content": [ "lecture", "Q&A session" ],
-                    "materials": [
-                        { "title": "Code Smells & Anti-Patterns" }
-                    ],
-                    "assignment": "Analyze your code for the presence of smells and anti-patterns."
                 },
                 {
                     "date": { "year": 2026, "month": 5, "day": 4 },
@@ -1681,79 +1677,80 @@
                     "date": { "year": 2026, "month": 5, "day": 7 },
                     "content": [ "lecture", "Q&A session" ],
                     "materials": [
-                        { "title": "Code Style & Documentation" }
+                        { "title": "Code Smells & Anti-Patterns" }
                     ],
-                    "assignment": "Maintain coding style compliance and write system documentation where necessary."
+                    "assignment": "Analyze your code for the presence of smells and anti-patterns."
                 },
                 {
                     "date": { "year": 2026, "month": 5, "day": 11 },
                     "content": [ "lecture", "student presentations" ],
                     "materials": [
-                        { "title": "UNIX Environment" }
-                    ]
+                        { "title": "Code Style & Documentation" }
+                    ],
+                    "assignment": "Maintain coding style compliance and write system documentation where necessary."
                 },
                 {
                     "date": { "year": 2026, "month": 5, "day": 14 },
                     "content": [ "lecture", "Q&A session" ],
                     "materials": [
-                        { "title": "Software Security" }
+                        { "title": "UNIX Environment" }
                     ]
                 },
                 {
                     "date": { "year": 2026, "month": 5, "day": 18 },
                     "content": [ "lecture", "student presentations" ],
                     "materials": [
-                        { "title": "LLMs for Code" }
+                        { "title": "Software Security" }
                     ]
                 },
                 {
                     "date": { "year": 2026, "month": 5, "day": 21 },
                     "content": [ "lecture", "Q&A session" ],
                     "materials": [
-                        { "title": "Coding Agents" }
-                    ]
+                        { "title": "LLMs for Code" }
+                    ]                    
                 },
                 {
                     "date": { "year": 2026, "month": 5, "day": 25 },
                     "content": [ "lecture", "student presentations" ],
                     "materials": [
-                        { "title": "Program Analysis" },
-                        { "title": "Abstract Interpretation" }
+                        { "title": "Coding Agents" }
                     ]
                 },
                 {
                     "date": { "year": 2026, "month": 5, "day": 28 },
                     "content": [ "lecture", "Q&A session" ],
                     "materials": [
-                        { "title": "Formal Verification" }
-                    ]
+                        { "title": "Program Analysis" },
+                        { "title": "Abstract Interpretation" }
+                    ]                    
                 },
                 {
                     "date": { "year": 2026, "month": 6, "day": 1 },
                     "content": [ "lecture", "student presentations" ],
                     "materials": [
-                        { "title": "Data Flow Analysis" }
-                    ]
+                        { "title": "Formal Verification" }
+                    ]                    
                 },
                 {
                     "date": { "year": 2026, "month": 6, "day": 4 },
                     "content": [ "lecture", "Q&A session" ],
                     "materials": [
-                        { "title": "Program Analysis With Datalog" }
+                        { "title": "Data Flow Analysis" }
                     ]
                 },
                 {
                     "date": { "year": 2026, "month": 6, "day": 8 },
                     "content": [ "lecture", "student presentations" ],
                     "materials": [
-                        { "title": "AI for Code Research Overview" }
-                    ]
+                        { "title": "Program Analysis With Datalog" }
+                    ]                    
                 },
                 {
                     "date": { "year": 2026, "month": 6, "day": 11 },
                     "content": [ "lecture", "Q&A session" ],
                     "materials": [
-                        { "title": "Software Engineering Research Overview" }
+                        { "title": "AI4Code Research Overview" }
                     ]
                 }
             ]
