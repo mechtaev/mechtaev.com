@@ -1597,7 +1597,7 @@
                     "date": { "year": 2026, "month": 4, "day": 2 },
                     "content": [ "lecture", "Q&A session" ],
                     "materials": [
-                        { "title": "Behavioral Patterns" }
+                        { "title": "Behavioral Patterns", "file": "pku-04834580-softeng-25_26-behavioral_patterns.pdf" }
                     ],
                     "assignment": "Apply appropriate behavioral patterns to your code."
                 },
