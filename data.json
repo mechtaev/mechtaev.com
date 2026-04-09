@@ -1268,6 +1268,18 @@
     ],
     "service": [
         {
+            "venue": "International Conference on the Foundations of Software Engineering",
+            "venue_short": "FSE",
+            "role": "Program committee",
+            "year": 2027
+        },
+        {
+            "venue": "International Workshop on Language Models and Programming Languages",
+            "venue_short": "LMPL@SPLASH",
+            "role": "Program committee",
+            "year": 2026
+        },
+        {
             "venue": "International Conference on Software Engineering",
             "venue_short": "ICSE",
             "role": "Program committee",
