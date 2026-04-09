@@ -1609,11 +1609,11 @@
                     "date": { "year": 2026, "month": 4, "day": 9 },
                     "content": [ "lecture", "Q&A session" ],
                     "materials": [
-                        { "title": "Parsing" },
-                        { "title": "Example: Java + ANTRL" },
-                        { "title": "Example: Python + Lark" },
-                        { "title": "Example: Recursive Descent" },
-                        { "title": "Example: Parser Combinators" }
+                        { "title": "Parsing", "file": "pku-04834580-softeng-25_26-parsing.pdf" },
+                        { "title": "Example: Java + ANTRL", "file": "example-java-antrl-parser.zip" },
+                        { "title": "Example: Python + Lark", "file": "example-python-lark-parser.zip" },
+                        { "title": "Example: Recursive Descent", "file": "example-recursive-descent.zip" },
+                        { "title": "Example: Parser Combinators", "file": "example-parser-combinators.zip" }
                     ],
                     "assignment": "Implement a parser of your choice."
                 },
