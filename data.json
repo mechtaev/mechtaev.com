@@ -1633,7 +1633,7 @@
                     "date": { "year": 2026, "month": 4, "day": 13 },
                     "content": [ "lecture", "student presentations" ],
                     "materials": [
-                        { "title": "Functional Programming Patterns" }
+                        { "title": "Functional Programming Patterns", "file": "pku-04834580-softeng-25_26-functional_programming_patterns.pdf" }
                     ],
                     "assignment": "Optionally, apply functional programming patterns in your code."
                 },
