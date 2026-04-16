@@ -1641,8 +1641,7 @@
                     "date": { "year": 2026, "month": 4, "day": 16 },
                     "content": [ "lecture", "Q&A session" ],
                     "materials": [
-                        { "title": "Testing" },
-                        { "title": "xUnit" }
+                        { "title": "Testing", "file": "pku-04834580-softeng-25_26-testing.pdf" }
                     ],
                     "assignment": "Write unit tests for your project."
                 },
