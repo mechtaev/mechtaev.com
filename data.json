@@ -1649,8 +1649,7 @@
                     "date": { "year": 2026, "month": 4, "day": 20 },
                     "content": [ "lecture", "student presentations" ],
                     "materials": [
-                        { "title": "Property-Based Testing" },
-                        { "title": "Symbolic Execution" }
+                        { "title": "Symbolic Execution", "file": "pku-04834580-softeng-25_26-symbolic-execution.pdf" }
                     ],
                     "assignment": "Optionally, apply property-based testing and symbolic execution to test your project"
                 },
