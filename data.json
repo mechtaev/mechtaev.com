@@ -1657,7 +1657,7 @@
                     "date": { "year": 2026, "month": 4, "day": 23 },
                     "content": [ "lecture", "Q&A session" ],
                     "materials": [
-                        { "title": "Dynamic Analysis & Fuzzing" }
+                        { "title": "Dynamic Analysis & Fuzzing", "file": "pku-04834580-softeng-25_26-dynamic_analysis_and_fuzzing.pdf" }
                     ],
                     "assignment": "Optionally, apply fuzzing to your project."
                 },
