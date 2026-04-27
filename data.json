@@ -1665,8 +1665,8 @@
                     "date": { "year": 2026, "month": 4, "day": 27 },
                     "content": [ "lecture", "student presentations" ],
                     "materials": [
-                        { "title": "Debugging" },
-                        { "title": "Error Handling" }
+                        { "title": "Debugging", "file": "pku-04834580-softeng-25_26-debugging.pdf" },
+                        { "title": "Error Handling", "file": "pku-04834580-softeng-25_26-error-handling.pdf" }
                     ],
                     "assignment": "Design robust error handling for your project."
                 },
