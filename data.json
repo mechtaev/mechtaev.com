@@ -1686,7 +1686,7 @@
                     "date": { "year": 2026, "month": 5, "day": 7 },
                     "content": [ "lecture", "Q&A session" ],
                     "materials": [
-                        { "title": "Code Smells & Anti-Patterns" }
+                        { "title": "Code Smells & Anti-Patterns", "file": "pku-04834580-softeng-25_26-code_smells.pdf" }
                     ],
                     "assignment": "Analyze your code for the presence of smells and anti-patterns."
                 },
