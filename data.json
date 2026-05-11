@@ -1694,7 +1694,7 @@
                     "date": { "year": 2026, "month": 5, "day": 11 },
                     "content": [ "lecture", "student presentations" ],
                     "materials": [
-                        { "title": "Code Style & Documentation" }
+                        { "title": "Code Style & Documentation", "file": "pku-04834580-softeng-25_26-code_style_documentation.pdf" }
                     ],
                     "assignment": "Maintain coding style compliance and write system documentation where necessary."
                 },
