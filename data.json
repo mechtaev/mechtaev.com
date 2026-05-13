@@ -1122,6 +1122,12 @@
     ],
     "talks": [
         {
+            "title": "Quality Assurance in The Era of Natural Language Driven Programming",
+            "date": { "day": 13, "month": 5, "year": 2026 },
+            "host": "Nanjing University",
+            "location": "Nanjing"
+        },
+        {
             "title": "Reducing Hallucinations in LLM-Generated Code via Semantic Triangulation",
             "date": { "day": 25, "month": 12, "year": 2025 },
             "host": "Zhejiang University",
@@ -1267,6 +1273,12 @@
         }
     ],
     "service": [
+        {
+            "venue": "International Conference on Object-Oriented Programming Systems, Languages, and Applications",
+            "venue_short": "OOPSLA",
+            "role": "Program committee",
+            "year": 2027
+        },
         {
             "venue": "International Conference on the Foundations of Software Engineering",
             "venue_short": "FSE",
