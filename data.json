@@ -1714,7 +1714,7 @@
                     "date": { "year": 2026, "month": 5, "day": 14 },
                     "content": [ "lecture", "Q&A session" ],
                     "materials": [
-                        { "title": "UNIX Environment" }
+                        { "title": "UNIX Environment": "file": "pku-04834580-softeng-25_26-unix_environment.pdf" }
                     ]
                 },
                 {
