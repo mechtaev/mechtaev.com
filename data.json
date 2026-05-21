@@ -1728,7 +1728,7 @@
                     "date": { "year": 2026, "month": 5, "day": 21 },
                     "content": [ "lecture", "Q&A session" ],
                     "materials": [
-                        { "title": "LLMs for Code" }
+                        { "title": "LLMs for Code", "file": "pku-04834580-softeng-25_26-llm_for_code.pdf" }
                     ]                    
                 },
                 {
