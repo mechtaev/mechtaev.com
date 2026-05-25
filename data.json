@@ -1735,7 +1735,7 @@
                     "date": { "year": 2026, "month": 5, "day": 25 },
                     "content": [ "lecture", "student presentations" ],
                     "materials": [
-                        { "title": "Coding Agents" }
+                        { "title": "Coding Agents", "file": "pku-04834580-softeng-25_26-coding_agents.pdf" }
                     ]
                 },
                 {
