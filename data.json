@@ -1750,7 +1750,7 @@
                     "date": { "year": 2026, "month": 6, "day": 1 },
                     "content": [ "lecture", "student presentations" ],
                     "materials": [
-                        { "title": "Formal Verification" }
+                        { "title": "Formal Verification", "file": "pku-04834580-softeng-25_26-verification.pdf" }
                     ]                    
                 },
                 {
