@@ -2,10 +2,10 @@ TEMPLATES := $(wildcard templates/*.html)
 
 site: render.py $(TEMPLATES)
 	mkdir -p _site
-	python render.py
+	uv run python render.py
 
 serve: site
-	cd _site && python -m http.server
+	cd _site && uv run python -m http.server
 
 clean:
 	rm -rf _site

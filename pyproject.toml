@@ -1,0 +1,10 @@
+[project]
+name = "mechtaev-com"
+version = "0.1.0"
+description = "Static site generator for mechtaev.com"
+requires-python = ">=3.9"
+dependencies = [
+    "jinja2",
+    "markdown",
+    "markupsafe",
+]

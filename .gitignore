@@ -1,2 +1,4 @@
 *~
 /_site/
+/.venv/
+__pycache__/
