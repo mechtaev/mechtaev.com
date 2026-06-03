@@ -1757,7 +1757,7 @@
                     "date": { "year": 2026, "month": 6, "day": 4 },
                     "content": [ "lecture", "Q&A session" ],
                     "materials": [
-                        { "title": "Data Flow Analysis" }
+                        { "title": "Data Flow Analysis", "file": "pku-04834580-softeng-25_26-data-flow-analysis.pdf" }
                     ]
                 },
                 {
