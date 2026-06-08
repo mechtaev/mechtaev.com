@@ -1764,7 +1764,7 @@
                     "date": { "year": 2026, "month": 6, "day": 8 },
                     "content": [ "lecture", "student presentations" ],
                     "materials": [
-                        { "title": "Program Analysis With Datalog" }
+                        { "title": "Program Analysis With Datalog", "file": "pku-04834580-softeng-25_26-program-analysis-with-datalog.pdf" }
                     ]                    
                 },
                 {
