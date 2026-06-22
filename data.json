@@ -135,12 +135,18 @@
                 { "name": "Earl T. Barr", "authorship": "normal" },                
                 { "name": "Sergey Mechtaev", "authorship": "corresponding" }
             ],
+            "venue": "International Conference on Automated Software Engineering",
+            "venue_short": "ASE",
             "year": 2026,
             "selected": false,
             "links": [
                 {
                     "url": "https://arxiv.org/abs/2603.28119",
                     "label": "Preprint"
+                },
+                {
+                    "url": "https://github.com/msv-lab/SWEzze",
+                    "label": "Artifact"
                 }
             ]
         },
@@ -782,6 +788,10 @@
         }
     ],
     "news": [
+        {
+            "date": { "day": 18, "month": 6, "year": 2026 },
+ 	          "text": "A paper on context compression for program repair has been accepted to ASE'26."
+        },
         {
             "date": { "day": 3, "month": 3, "year": 2026 },
  	          "text": "HoarePrompt [ICSE'26] received ACM SIGSOFT Distinguished Paper Award."
