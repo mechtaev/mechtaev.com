@@ -157,6 +157,8 @@
                 { "name": "Dimitrios Stamatios Bouras", "authorship": "normal" },
                 { "name": "Sergey Mechtaev", "authorship": "corresponding" }
             ],
+            "venue": "International Symposium on Software Testing and Analysis",
+            "venue_short": "ISSTA",
             "year": 2026,
             "selected": false,
             "links": [
@@ -788,6 +790,10 @@
         }
     ],
     "news": [
+        {
+            "date": { "day": 25, "month": 6, "year": 2026 },
+ 	          "text": "A paper on LLM-based symbolic execution has been accepted to ISSTA'26."
+        },
         {
             "date": { "day": 18, "month": 6, "year": 2026 },
  	          "text": "A paper on context compression for program repair has been accepted to ASE'26."
