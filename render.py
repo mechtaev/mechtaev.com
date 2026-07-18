@@ -145,6 +145,16 @@ def build():
         os.makedirs(output_dir)
 
     copy_dir_files("files", output_dir / "files")
+
+    # The CV is generated from data.json by cv/generate_cv.py (built by the
+    # `cv` target in the Makefile) and published alongside the static files.
+    cv_pdf = Path("cv") / "sergey_mechtaev_cv.pdf"
+    if not cv_pdf.exists():
+        raise SystemExit(
+            f"{cv_pdf} not found: run `make cv` (or `make site`) so the "
+            "CV link on the overview page does not break")
+    shutil.copy2(cv_pdf, output_dir / "files" / cv_pdf.name)
+
     render(output_dir, data)
 
 

@@ -1,0 +1,163 @@
+%=====================================================================
+%  Academic CV — Jinja2 template (rendered by generate_cv.py)
+%  Delimiters: backslash-VAR for variables, backslash-BLOCK for control flow
+%=====================================================================
+\documentclass[10pt,a4paper]{article}
+
+%---------------------------------------------------------------------
+% Layout & typography
+%---------------------------------------------------------------------
+\usepackage[a4paper,margin=2.1cm,top=1.8cm,bottom=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[sups,osf]{XCharter}      % Charter with old-style figures
+\usepackage[tracking=smallcaps]{microtype}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{inkdark}{HTML}{1A1A1A}  % near-black for headings
+\definecolor{rulegray}{HTML}{9A9A9A}
+\definecolor{datecol}{HTML}{4A4A4A}
+
+\hypersetup{pdftitle={\VAR{name} --- Curriculum Vitae},
+            pdfauthor={\VAR{name}}}
+
+% Letterspaced small caps, the classical way
+\newcommand{\spacedsc}[1]{\textls[80]{\scshape #1}}
+
+\pagestyle{plain}
+\setlength{\parindent}{0pt}
+\raggedbottom
+
+%---------------------------------------------------------------------
+% Section styling: letterspaced small caps over a hairline rule
+%---------------------------------------------------------------------
+\titleformat{\section}
+  {\color{inkdark}\normalsize}
+  {}{0pt}
+  {\spacedsc}
+  [\vspace{-0.55\baselineskip}{\color{rulegray}\rule{\linewidth}{0.4pt}}]
+\titlespacing*{\section}{0pt}{1.1\baselineskip}{0.5\baselineskip}
+
+%---------------------------------------------------------------------
+% Entry macros
+%---------------------------------------------------------------------
+% \entry{left}{right-date} — one-line entry with right-aligned date
+\newcommand{\entry}[2]{%
+  \par\noindent
+  \begin{tabularx}{\linewidth}{@{}X@{\hspace{1em}}r@{}}
+    #1 & {\color{datecol}\small #2}
+  \end{tabularx}\par}
+
+% \detail{...} — secondary line under an entry
+\newcommand{\detail}[1]{{\small #1\par}\vspace{3pt}}
+
+% Publication list
+\newenvironment{publist}{%
+  \begin{enumerate}[label={[\arabic*]},leftmargin=2.4em,itemsep=2pt,
+                    parsep=0pt,topsep=1pt]}{\end{enumerate}}
+\newcommand{\me}[1]{\underline{#1}}   % highlight the CV owner's name
+
+% Compact itemize with a discreet en-dash marker
+\setlist[itemize]{leftmargin=1.2em,itemsep=1pt,parsep=0pt,topsep=1pt,
+                  label={--}}
+
+%=====================================================================
+\begin{document}
+
+%---------------------------------------------------------------------
+% Letterhead: name and affiliation left, contact block right
+%---------------------------------------------------------------------
+\noindent
+\begin{minipage}[t]{0.6\linewidth}
+  \raggedright
+  {\LARGE\textls[120]{\scshape \VAR{name}}}\\[5pt]
+  {\color{datecol}\small
+   \VAR{title_line}\\
+   \VAR{address}\par}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.36\linewidth}
+  \raggedleft
+  {\color{datecol}\small
+   \BLOCK{for link in links}\href{\VAR{link.url}}{\VAR{link.text}}\BLOCK{if not loop.last}\\
+   \BLOCK{endif}\BLOCK{endfor}\par}
+\end{minipage}
+
+%---------------------------------------------------------------------
+\section{Education}
+\BLOCK{for e in education}
+\entry{\textbf{\VAR{e.degree}}, \VAR{e.university}, \VAR{e.faculty}}{\VAR{e.dates}}
+\detail{Thesis: \emph{\VAR{e.thesis}}. Supervisor: \VAR{e.supervisor}.}
+\BLOCK{endfor}
+
+%---------------------------------------------------------------------
+\section{Employment}
+\BLOCK{for e in employment}
+\BLOCK{for r in e.rows}
+\entry{\textbf{\VAR{r.title}}, \VAR{e.employer}, \VAR{e.location}}{\VAR{r.dates}}
+\BLOCK{endfor}
+\BLOCK{if not loop.last}\vspace{4pt}
+\BLOCK{endif}
+\BLOCK{endfor}
+
+%---------------------------------------------------------------------
+\section{Awards}
+\BLOCK{for a in awards}
+\entry{\textbf{\VAR{a.title}}}{\VAR{a.year}}
+\detail{\VAR{a.description}}
+\BLOCK{endfor}
+
+%---------------------------------------------------------------------
+\section{Grants}
+\BLOCK{for g in grants}
+\entry{\textbf{\VAR{g.funder}}, \VAR{g.call}}{\VAR{g.year}}
+\detail{\VAR{g.description}}
+\BLOCK{endfor}
+
+%---------------------------------------------------------------------
+\section{Deployments}
+\BLOCK{for o in deployments}
+\entry{\textbf{\VAR{o.title}}}{\VAR{o.year}}
+\detail{\VAR{o.description}}
+\BLOCK{endfor}
+
+%---------------------------------------------------------------------
+\section{Publications}
+\textit{\small \me{Underline} marks my name;
+\textsuperscript{*} joint first authorship;
+\textsuperscript{\dag} corresponding authorship.}
+\begin{publist}
+\BLOCK{for p in publications}
+  \item \VAR{p.authors}. ``\VAR{p.title}.'' \VAR{p.venue_line}.\BLOCK{if p.awards} \textbf{\VAR{p.awards}.}\BLOCK{endif}
+\BLOCK{endfor}
+\end{publist}
+
+%---------------------------------------------------------------------
+\section{Teaching}
+\BLOCK{for t in teaching}
+\entry{\textbf{\VAR{t.role}}, \VAR{t.title}, \VAR{t.institution}}{\VAR{t.dates}}
+\BLOCK{endfor}
+
+%---------------------------------------------------------------------
+\section{Students}
+\BLOCK{for s in students}
+\entry{\textbf{\VAR{s.name}}, \VAR{s.position}, \VAR{s.host}}{\VAR{s.dates}}
+\BLOCK{if s.detail}\detail{\VAR{s.detail}}\BLOCK{endif}
+\BLOCK{endfor}
+
+%---------------------------------------------------------------------
+\section{Professional Service}
+\begin{itemize}
+\BLOCK{for g in service}
+  \item \textbf{\VAR{g.role}:} \VAR{g.venues}.
+\BLOCK{endfor}
+\end{itemize}
+
+\vspace{\baselineskip}
+{\color{datecol}\footnotesize Last updated: \VAR{updated}}
+
+\end{document}
