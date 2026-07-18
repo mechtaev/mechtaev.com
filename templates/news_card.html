@@ -10,7 +10,7 @@ News
 <div>
   <table class="table-auto border-separate border-spacing-x-1 border-spacing-y-1">
     <tbody>
-      {% for n in news[:9] %}
+      {% for n in news[:5] %}
       <tr class="align-top">
         <td class="text-sm text-stone-400 pt-1">{{ '%02d' | format(n.date.day) }}/{{ '%02d' | format(n.date.month) }}/{{ n.date.year - 2000 }}</td>
         <td><td class="text-base/5 pt-1">{{ n.text }}</td></td>

@@ -7,11 +7,15 @@
 
     {% include 'publications_card.html' %}
 
-    {% include 'news_card.html' %}
+    {# On the three-column layout News and Talks stack one below the other in
+       a single cell; below xl the wrapper dissolves (display: contents) and
+       both cards are placed in the grid individually. #}
+    <div class="contents xl:flex xl:flex-col xl:gap-5 xl:w-full xl:max-w-144">
+      {% include 'news_card.html' %}
+      {% include 'talks_card.html' %}
+    </div>
 
     {% include 'group_card.html' %}
-
-    {% include 'talks_card.html' %}
 
     {% include 'service_card.html' %}
 
