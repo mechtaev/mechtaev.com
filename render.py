@@ -130,6 +130,13 @@ def build():
     with open('data.json', 'r') as file:
         data = json.load(file)
 
+    # Most senior first: members are ordered by when they joined the group,
+    # i.e. by the start of the earliest entry in their history.
+    def joined(member):
+        start = member["history"][-1]["start"]
+        return (start["year"], start.get("month", 1))
+    data["group"].sort(key=joined)
+
     for course in data.get("teaching", []):
         if "id" in course:
             structure[course["id"]] = {

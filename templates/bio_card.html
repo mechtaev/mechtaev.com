@@ -20,8 +20,8 @@
         <td>{{ utils.link(general.github, 'https://' + general.github) }}</td>
       </tr>
       <tr class="align-top">
-        <td class="text-sm text-stone-500 pt-1">Twitter</td>
-        <td>{{ utils.link(general.twitter, 'https://' + general.twitter) }}</td>
+        <td class="text-sm text-stone-500 pt-1">LinkedIn</td>
+        <td>{{ utils.link(general.linkedin.split('/')[-1], 'https://' + general.linkedin) }}</td>
       </tr>
       <tr class="align-top">
         <td class="text-sm text-stone-500 pt-1">Address</td>
@@ -36,7 +36,7 @@
 {% endblock %}
 
 {% block links %}
-{{ utils.link('Full CV', file_url('sergey_mechtaev_cv.pdf')) }}
+{{ utils.link('CV', file_url('sergey_mechtaev_cv.pdf')) }}
 {{ utils.link('Research Overview', page_url('research')) }}
 {{ utils.link('Achievements', page_url('achievements')) }}
 {% endblock %}

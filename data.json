@@ -7,6 +7,7 @@
         "website": "https://mechtaev.com",
         "github": "github.com/mechtaev",
         "twitter": "x.com/sergey_mechtaev",
+        "linkedin": "www.linkedin.com/in/sergey-mechtaev-6470aa218",
         "scholar": "https://scholar.google.com/citations?user=XTFR93cAAAAJ&hl=en",
         "dblp": "https://dblp.uni-trier.de/pers/hd/m/Mechtaev:Sergey"
         
@@ -186,7 +187,7 @@
                     "label": "Preprint"
                 },
                 {
-                    "url": "github.com/msv-lab/just-tri-it",
+                    "url": "https://github.com/msv-lab/just-tri-it",
                     "label": "Artifact"
                 }
             ]
@@ -1058,7 +1059,8 @@
             "type": "grant",
             "funder": "UCL-PKU",
             "call": "Peking University-University College London Strategic Partner Funds",
-            "description": "For the proposal \"Prompt Compression for Efficient and Sustainable AI-Driven Software Engineering\" with Prof. Federica Sarro"
+            "description": "For the proposal \"Prompt Compression for Efficient and Sustainable AI-Driven Software Engineering\" with Prof. Federica Sarro",
+            "year": 2026
         },
         {
             "type": "grant",
