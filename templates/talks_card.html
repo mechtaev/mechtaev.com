@@ -1,28 +1,17 @@
 {% extends "overview_card.html" %}
 
-{% import 'utils.html' as utils %}
-
 {% block title %}
 Talks
 {% endblock %}
 
 {% block content %}
-<div>
-  <table class="table-auto border-separate border-spacing-x-1 border-spacing-y-1">
-    <tbody>
-      {% for t in talks[:3] %}
-      <tr class="align-top">
-        <td class="text-sm text-stone-400 pt-1">{{ month_name(t.date.month) }} {{ t.date.year }}</td>
-        <td><td class="text-base/5 pt-1"><span class="font-bold">{{ t.title }}.</span> <span>{{ t.host }}.</span></td></td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+<div class="grid grid-cols-[auto_minmax(0,1fr)] items-baseline gap-x-5 gap-y-block">
+  {% for t in talks[:3] %}
+  <span class="entry-note whitespace-nowrap">{{ month_name(t.date.month)[:3] }} {{ t.date.year }}</span>
+  <div>
+    <p class="entry-title">{{ t.title }}</p>
+    <p class="entry-meta">{{ t.host }}</p>
+  </div>
+  {% endfor %}
 </div>
 {% endblock %}
-
-{#
-{% block links %}
-{{ utils.link('View All in Full CV', file_url('sergey_mechtaev_full_cv.pdf')) }}
-{% endblock %}
-#}

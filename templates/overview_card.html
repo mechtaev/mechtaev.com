@@ -1,17 +1,11 @@
-<div class="w-full max-w-144 bg-white border border-stone-200 shadow-sm hover:shadow-md transition-shadow">
-  <div class="flex flex-col justify-between h-full">
-    <div>
-      <p class="font-sans font-semibold text-sm uppercase tracking-wide text-stone-500 p-5 pb-0">{% block title %}{% endblock %}</p>
-      <div class="font-serif p-5 pt-3">
-        <div>
-          {% block content %}{% endblock %}
-        </div>
-      </div>
-    </div>
-    <div class="font-serif px-5 pb-5">
-      <div class="flex flex-row gap-3">
-        {% block links %}{% endblock %}
-      </div>
-    </div>
-  </div>
-</div>
+{# One section of the overview page: a label, its rows, and an optional row of
+   links. No frame — the rule under the label and the `section` gap around the
+   whole thing are what set it apart from its neighbours. #}
+<section class="w-full max-w-144">
+  {% block header %}<h2 class="section-label">{% block title %}{% endblock %}</h2>{% endblock %}
+  {% block content %}{% endblock %}
+  {% set card_links %}{% block links %}{% endblock %}{% endset %}
+  {% if card_links.strip() %}
+  <div class="link-row mt-block">{{ card_links }}</div>
+  {% endif %}
+</section>

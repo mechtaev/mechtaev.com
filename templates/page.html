@@ -3,21 +3,15 @@
 {% import 'utils.html' as utils %}
 
 {% block content %}
-<div class="w-full max-w-222 mx-auto bg-white border border-stone-200 shadow-sm my-8">
-  <div class="flex flex-col justify-between h-full">
-    <div>
-      <div class="font-sans text-sm text-stone-400 pl-6 pr-6 pt-4 pb-3">
-        {% for d in page_context %}
-          {% if d.linked %}{{ utils.link(d.title, d.path) }}{% else %}<span>{{ d.title }}</span>{% endif %} /
-        {% endfor %}
-        <span class="text-stone-600">{{ page_title }}</span>
-      </div>
-      <div class="font-serif pl-6 pr-6 pt-3 pb-5">
-        <div>
-          {% block inner %}{% endblock %}
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="measure">
+  {# With no frame around the page, the trail and the title are what mark
+     where it begins. #}
+  <nav class="font-sans text-faint text-meta">
+    {% for d in page_context %}
+      {% if d.linked %}{{ utils.link(d.title, d.path) }}{% else %}<span>{{ d.title }}</span>{% endif %}{% if not loop.last %} <span class="text-rule">/</span> {% endif %}
+    {% endfor %}
+  </nav>
+  <h1 class="font-serif font-semibold text-ink text-name mt-2 mb-section">{{ page_title }}</h1>
+  {% block inner %}{% endblock %}
 </div>
 {% endblock %}

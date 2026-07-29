@@ -7,24 +7,17 @@ Group
 {% endblock %}
 
 {% block content %}
-<div>
-  <!--
-  <div class="p-3 mt-2 mb-4 text-amber-900 outline-1 outline-amber-400 bg-amber-50" role="alert">
-    {{ utils.link('PhD positions', page_url('achievements')) }} available for September 2026 intake.
-  </div>
-  -->
-  <ul>
-    {% for m in group %}
-    {% if not m.alumni %}
-    <li class="flex py-1.5 first:pt-0 last:pb-0">
-      <div>
-        <p class="text-base/5"><span class="font-bold">{{ m.name }}</span></br><span class="find-italic">{{ m.history[0].position }} at {{ m.host_short }}</span></p>
-      </div>
-    </li>
-    {% endif %}
-    {% endfor %}
-  </ul>
-</div>
+{# <p class="entry-body mb-block">{{ utils.link('PhD positions', page_url('achievements')) }} available for September 2026 intake.</p> #}
+<ul class="rows">
+  {% for m in group %}
+  {% if not m.alumni %}
+  <li>
+    <p class="entry-title">{{ m.name }}</p>
+    <p class="entry-meta">{{ m.history[0].position }} at {{ m.host_short }}</p>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
 {% endblock %}
 
 {#

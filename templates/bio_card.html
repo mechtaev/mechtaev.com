@@ -2,28 +2,28 @@
 
 {% import 'utils.html' as utils %}
 
-{% block title %}
-<span class="text-xl font-semibold normal-case tracking-normal text-stone-800">Sergey Mechtaev / 谢辽夏</span>
+{# The name is the masthead of the whole site, so it takes the place of the
+   section label rather than sitting under one. #}
+{% block header %}
+<h1 class="font-serif font-semibold text-ink text-name mb-block">Sergey Mechtaev / 谢辽夏</h1>
 {% endblock %}
 
 {% block content %}
 <div class="@container">
-<div class="flex flex-col @sm:flex-row gap-5 mt-2 mb-4">
-  <img class="block h-48 shadow-sm mx-auto @sm:mx-0" src={{ file_url('portrait.jpg') }} alt="Sergey Mechtaev's Portrait" />
-  <div class="flex-1 min-w-0 grid grid-cols-[auto_minmax(0,1fr)] gap-x-2 content-start">
-    <div class="text-sm text-stone-500 pt-1">Email</div>
-    <div class="break-words">{{ utils.link((general.work_email | replace('@', '@<wbr>')) | safe, 'mailto:' + general.work_email) }}</div>
-    <div class="text-sm text-stone-500 pt-1">GitHub</div>
-    <div class="break-words">{{ utils.link((general.github | replace('/', '/<wbr>')) | safe, 'https://' + general.github) }}</div>
-    <div class="text-sm text-stone-500 pt-1">LinkedIn</div>
-    <div class="break-words">{{ utils.link(general.linkedin.split('/')[-1], 'https://' + general.linkedin) }}</div>
-    <div class="text-sm text-stone-500 pt-1">Address</div>
-    <div class="tracking-tight text-base/5 pt-1">{{ general.work_address }}</div>
+  <div class="flex flex-col @sm:flex-row gap-block">
+    <img class="block h-48 mx-auto @sm:mx-0" src={{ file_url('portrait.jpg') }} alt="Sergey Mechtaev's Portrait" />
+    <div class="flex-1 min-w-0 grid grid-cols-[auto_minmax(0,1fr)] gap-x-4 gap-y-2 content-start">
+      <div class="entry-note">Email</div>
+      <div class="entry-meta break-words">{{ utils.link((general.work_email | replace('@', '@<wbr>')) | safe, 'mailto:' + general.work_email) }}</div>
+      <div class="entry-note">GitHub</div>
+      <div class="entry-meta break-words">{{ utils.link((general.github | replace('/', '/<wbr>')) | safe, 'https://' + general.github) }}</div>
+      <div class="entry-note">LinkedIn</div>
+      <div class="entry-meta break-words">{{ utils.link(general.linkedin.split('/')[-1], 'https://' + general.linkedin) }}</div>
+      <div class="entry-note">Address</div>
+      <div class="entry-meta">{{ general.work_address }}</div>
+    </div>
   </div>
-</div>
-<p>
-  {{ general.bio }}
-</p>
+  <p class="entry-body mt-block">{{ general.bio }}</p>
 </div>
 {% endblock %}
 

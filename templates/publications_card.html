@@ -7,27 +7,19 @@ Publications
 {% endblock %}
 
 {% block content %}
-<div>
-  <ul>
-    {% for p in publications[:5] %}
-    <li class="flex py-2.5 first:pt-0 last:pb-0">
-      <div>
-        <p class="text-base/5"><span class="font-bold">{{ p.title }}.</span> <span class="italic">{{ p.authors|map(attribute='name')|join(', ') }}.</span> <span class="text-stone-500">{% if p.venue_short %} {{ p.venue_short }} {% else %} Draft {% endif %} {{ p.year }}.</span></p>
-        {% if p.file or p.links %}
-        <div class="text-sm flex flex-row gap-3 mt-1">
-          {% if p.file %}
-            {{ utils.link('[' + p.file_label + ']', file_url(p.file)) }}
-          {% endif %}
-          {% for l in p.links %}
-            {{ utils.link('[' + l.label + ']', l.url) }}
-          {% endfor %}
-        </div>
-        {% endif %}
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
+<ul class="rows-loose">
+  {% for p in publications[:5] %}
+  <li>
+    <p class="entry-title">{{ p.title }}</p>
+    <p class="entry-meta">{{ p.authors|map(attribute='name')|join(', ') }}</p>
+    <div class="link-row">
+      <span class="entry-note">{% if p.venue_short %}{{ p.venue_short }}{% else %}Draft{% endif %} {{ p.year }}</span>
+      {% if p.file %}{{ utils.link(p.file_label, file_url(p.file)) }}{% endif %}
+      {% for l in p.links %}{{ utils.link(l.label, l.url) }}{% endfor %}
+    </div>
+  </li>
+  {% endfor %}
+</ul>
 {% endblock %}
 
 {% block links %}

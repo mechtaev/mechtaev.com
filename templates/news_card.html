@@ -1,25 +1,14 @@
 {% extends "overview_card.html" %}
 
-{% import 'utils.html' as utils %}
-
 {% block title %}
 News
 {% endblock %}
 
 {% block content %}
-<div>
-  <table class="table-auto border-separate border-spacing-x-1 border-spacing-y-1">
-    <tbody>
-      {% for n in news[:5] %}
-      <tr class="align-top">
-        <td class="text-sm text-stone-400 pt-1">{{ '%02d' | format(n.date.day) }}/{{ '%02d' | format(n.date.month) }}/{{ n.date.year - 2000 }}</td>
-        <td><td class="text-base/5 pt-1">{{ n.text }}</td></td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+<div class="grid grid-cols-[auto_minmax(0,1fr)] items-baseline gap-x-5 gap-y-row">
+  {% for n in news[:5] %}
+  <span class="entry-note tabular-nums">{{ '%02d' | format(n.date.day) }}/{{ '%02d' | format(n.date.month) }}/{{ n.date.year - 2000 }}</span>
+  <span class="entry-body">{{ n.text }}</span>
+  {% endfor %}
 </div>
-{% endblock %}
-
-{% block links %}
 {% endblock %}

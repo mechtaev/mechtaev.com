@@ -1,25 +1,19 @@
 {% extends "page.html" %}
 
-{% import 'utils.html' as utils %}
-
 {% block inner %}
-<div class="mb-3">
-  <p>This page lists my awards, grants, deployments, and other important achievements.</p>
-  <ul>
-    {% for a in achievements %}
-    {% if loop.first or loop.previtem.year != a.year %}
-    <li class="flex py-2 text-lg font-sans font-medium text-stone-400">{{ a.year }}</li>
-    {% endif %}
-    <li class="flex py-2.5 last:pb-0">
-      <div>
-        {% if a.type == 'grant' %}
-        <p class="text-base/5"><span class="font-bold">{{ a.funder }} {{ a.call }}</span><br/><span>{{ a.description }}.</span></p>
-        {% else %}
-        <p class="text-base/5"><span class="font-bold">{{ a.title }}</span><br/><span>{{ a.description }}</span></p>
-        {% endif %}
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
+<p class="entry-body mb-section">This page lists my awards, grants, deployments, and other important achievements.</p>
+{% for a in achievements %}
+{% if loop.first or loop.previtem.year != a.year %}
+<h2 class="section-label {% if not loop.first %}mt-section{% endif %}">{{ a.year }}</h2>
+{% endif %}
+<div class="{% if not loop.last %}mb-block{% endif %}">
+  {% if a.type == 'grant' %}
+  <p class="entry-title">{{ a.funder }} {{ a.call }}</p>
+  <p class="entry-body">{{ a.description }}.</p>
+  {% else %}
+  <p class="entry-title">{{ a.title }}</p>
+  <p class="entry-body">{{ a.description }}</p>
+  {% endif %}
 </div>
+{% endfor %}
 {% endblock %}

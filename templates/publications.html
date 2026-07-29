@@ -3,36 +3,24 @@
 {% import 'utils.html' as utils %}
 
 {% block inner %}
-<div class="mb-3">
-  <p class="text-sm text-stone-400 mb-4"># corresponding author, * equal contribution</p>
-  <ul>
-    {% for p in publications %}
-    {% if loop.first or loop.previtem.year != p.year %}
-    <li class="flex py-2 text-lg font-sans font-medium text-stone-400">{{ p.year }}</li>
-    {% endif %}
-    <li class="flex py-2.5 last:pb-0">
-      <div>
-        <p class="text-base/5"><span class="font-bold">{{ p.title }}</span><br/><span class="italic">{% for a in p.authors %}{{ a.name }}{% if a.authorship == 'corresponding' %}<sup>#</sup>{% elif a.authorship == 'equal' %}<sup>*</sup>{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}</span><br/><span class="text-stone-500">{% if p.venue_short %} {{ p.venue_short }} {% else %} Draft {% endif %} {{ p.year }}</span></p>
-        {% if p.awards %}
-        <div class="text-sm">
-          {% for award in p.awards %}
-          <span class="font-bold text-yellow-600">{{ award }}</span>{% if not loop.last %}, {% endif %}
-          {% endfor %}
-        </div>
-        {% endif %}
-        {% if p.file or p.links %}
-        <div class="text-sm flex flex-row gap-3 mt-1">
-          {% if p.file %}
-            {{ utils.link('[' + p.file_label + ']', file_url(p.file)) }}
-          {% endif %}
-          {% for l in p.links %}
-            {{ utils.link('[' + l.label + ']', l.url) }}
-          {% endfor %}
-        </div>
-        {% endif %}
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
+<p class="entry-note mb-section">&num; corresponding author, * equal contribution</p>
+{% for p in publications %}
+{% if loop.first or loop.previtem.year != p.year %}
+{# Years are the sections of this page, and carry the same label as the
+   sections of the overview. #}
+<h2 class="section-label {% if not loop.first %}mt-section{% endif %}">{{ p.year }}</h2>
+{% endif %}
+<div class="{% if not loop.last %}mb-block{% endif %}">
+  <p class="entry-title">{{ p.title }}</p>
+  <p class="entry-meta">{% for a in p.authors %}{{ a.name }}{% if a.authorship == 'corresponding' %}<sup>#</sup>{% elif a.authorship == 'equal' %}<sup>*</sup>{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}</p>
+  {% if p.awards %}
+  <p class="font-sans text-award text-meta">{{ p.awards | join(', ') }}</p>
+  {% endif %}
+  <div class="link-row">
+    <span class="entry-note">{% if p.venue_short %}{{ p.venue_short }}{% else %}Draft{% endif %} {{ p.year }}</span>
+    {% if p.file %}{{ utils.link(p.file_label, file_url(p.file)) }}{% endif %}
+    {% for l in p.links %}{{ utils.link(l.label, l.url) }}{% endfor %}
+  </div>
 </div>
+{% endfor %}
 {% endblock %}
