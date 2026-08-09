@@ -181,6 +181,8 @@
             ],
             "year": 2026,
             "selected": false,
+            "venue": "Object-Oriented Programming, Systems, Languages & Applications",
+            "venue_short": "OOPSLA",
             "links": [
                 {
                     "url": "https://arxiv.org/abs/2511.12288",
@@ -791,6 +793,10 @@
         }
     ],
     "news": [
+        {
+            "date": { "day": 7, "month": 8, "year": 2026 },
+ 	          "text": "A paper on asessting correctness of LLM-generated code has been accepted to OOPSLA'26."
+        },        
         {
             "date": { "day": 25, "month": 6, "year": 2026 },
  	          "text": "A paper on LLM-based symbolic execution has been accepted to ISSTA'26."
