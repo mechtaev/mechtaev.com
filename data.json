@@ -795,7 +795,7 @@
     "news": [
         {
             "date": { "day": 7, "month": 8, "year": 2026 },
- 	          "text": "A paper on asessting correctness of LLM-generated code has been accepted to OOPSLA'26."
+ 	          "text": "A paper on assessing correctness of LLM-generated code has been accepted to OOPSLA'26."
         },        
         {
             "date": { "day": 25, "month": 6, "year": 2026 },
