@@ -1553,6 +1553,134 @@
     ],
     "teaching": [
         {
+            "id": "pku_clai_26_27",
+            "title": "10100024 Computational Logic in the Era of AI",
+            "institution": "Peking University",
+            "academic_year": "2026-2027",
+            "class_time": [
+                { "day": "Monday", "from_class": 7, "to_class": 9 }
+            ],
+            "classroom": "马池口110",
+            "semester": 1,
+            "start": { "month": 9, "year": 2026 },
+            "end": { "month": 12, "year": 2026 },
+            "role": "Lecturer",
+            "teaching_assistants": [ "Sijie Liang" ],
+            "description": "Language models now produce code and mathematical proofs in quantity, but they offer no guarantee that what they produce is correct, and reviewing it by inspection does not scale. Formal verification provides such a guarantee: a specification states precisely what a program or a theorem must satisfy, and a proof that it does so can be checked mechanically by a small program, independently of how that proof was found. This course develops that idea from its foundations to its practical use. The theory begins with the untyped λ-calculus and builds through the λ-cube to the type theory on which Lean 4 rests, including the correspondence between propositions and types that makes proof checking a form of type checking. The practice begins with Lean as a programming language and ends with programs that carry contracts and machine-checked proofs of their specifications. On completing the course, students will be able to write formal specifications, prove that implementations satisfy them, and determine what an AI-generated program or proof does and does not guarantee.",
+            "schedule": [
+                {
+                    "date": { "year": 2026, "month": 9, "day": 7 },
+                    "content": [ "lecture" ],
+                    "materials": [
+                        { "title": "Introduction", "file": "pku-10100024-clai-26_27-introduction.pdf" },
+                        { "title": "Untyped Lambda Calculus" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 9, "day": 14 },
+                    "content": [ "lecture" ],
+                    "materials": [
+                        { "title": "Simply Typed Lambda Calculus" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 9, "day": 21 },
+                    "content": [ "lecture" ],
+                    "materials": [
+                        { "title": "The λ-Cube and Propositions-as-Types" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 9, "day": 28 },
+                    "content": [ "lecture" ],
+                    "materials": [
+                        { "title": "Definitions, Environments, and the Trusted Core" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 10, "day": 5 },
+                    "content": [ "holidays" ]
+                },
+                {
+                    "date": { "year": 2026, "month": 10, "day": 12 },
+                    "content": [ "lecture" ],
+                    "materials": [
+                        { "title": "Inductive Types, and What CIC Adds" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 10, "day": 19 },
+                    "content": [ "lecture" ],
+                    "materials": [
+                        { "title": "Equality, and Sets as Predicates" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 10, "day": 26 },
+                    "content": [ "lecture" ],
+                    "materials": [
+                        { "title": "Automation, and the Decidable Fragment" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 11, "day": 2 },
+                    "content": [ "lecture" ],
+                    "materials": [
+                        { "title": "Specification, Verification, and Testing" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 11, "day": 9 },
+                    "content": [ "lecture" ],
+                    "materials": [
+                        { "title": "Effects and Monads" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 11, "day": 16 },
+                    "content": [ "lecture" ],
+                    "materials": [
+                        { "title": "Hoare Logic" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 11, "day": 23 },
+                    "content": [ "lecture" ],
+                    "materials": [
+                        { "title": "Weakest Preconditions" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 11, "day": 30 },
+                    "content": [ "lecture" ],
+                    "materials": [
+                        { "title": "Loops, Invariants and Verification Conditions" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 12, "day": 7 },
+                    "content": [ "lecture" ],
+                    "materials": [
+                        { "title": "Verification-Condition Generation" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 12, "day": 14 },
+                    "content": [ "lecture" ],
+                    "materials": [
+                        { "title": "Intrinsic Contracts" }
+                    ]
+                },
+                {
+                    "date": { "year": 2026, "month": 12, "day": 21 },
+                    "content": [ "lecture" ],
+                    "materials": [
+                        { "title": "AI in the Loop" }
+                    ]
+                }
+            ]
+        },
+        {
             "id": "pku_softeng_25_26",
             "title": "04834580 Software Engineering (Honor Track)",
             "institution": "Peking University",
