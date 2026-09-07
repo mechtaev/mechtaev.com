@@ -43,7 +43,7 @@ theorem score_append (l : List Nat) (x : Nat) :
     score (l ++ [x]) = score l + bonus x := by
   induction l with
   | nil => simp [score]
-  | cons y ys ih => simp [score, ih]; omega
+  | cons y ys ih => simp [score, ih, Nat.add_assoc]
 
 def scoreInto (xs : List Nat) : StateM Nat Unit
     requires s => s = 0
