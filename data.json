@@ -1574,7 +1574,7 @@
                     "materials": [
                         { "title": "Introduction", "file": "pku-10100024-clai-26_27-introduction.pdf" },
                         { "title": "Assessment", "file": "pku-10100024-clai-26_27-assessment.pdf" },
-                        { "title": "Untyped Lambda Calculus" }
+                        { "title": "Untyped Lambda Calculus", "file": "pku-10100024-clai-26_27-untyped-lambda-calculus.pdf" }
                     ]
                 },
                 {
