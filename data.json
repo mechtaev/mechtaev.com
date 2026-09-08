@@ -1576,7 +1576,9 @@
                         { "title": "Introduction (Lean file)", "file": "pku-10100024-clai-26_27-introduction.lean" },
                         { "title": "Assessment", "file": "pku-10100024-clai-26_27-assessment.pdf" },
                         { "title": "Untyped Lambda Calculus", "file": "pku-10100024-clai-26_27-untyped-lambda-calculus.pdf" },
-                        { "title": "Untyped Lambda Calculus (Lean file)", "file": "pku-10100024-clai-26_27-untyped-lambda-calculus.lean" }
+                        { "title": "Untyped Lambda Calculus (Lean file)", "file": "pku-10100024-clai-26_27-untyped-lambda-calculus.lean" },
+                        { "title": "Exercise 1.1", "file": "pku-10100024-clai-26_27-exercise-1-1.pdf" },
+                        { "title": "Exercise 1.2", "file": "pku-10100024-clai-26_27-exercise-1-2.pdf" }
                     ]
                 },
                 {
