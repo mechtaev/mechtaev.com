@@ -129,6 +129,19 @@
     ],
     "publications": [
         {
+            "id": "capscope",
+            "title": "Authority Is Not a String: A Capability-Scoped Harness for Prompt-Injection-Resistant Coding Agents",
+            "authors": [
+                { "name": "Dimitrios Stamatios Bouras", "authorship": "normal" },
+                { "name": "Yihan Dai", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "normal" }
+            ],
+            "venue": "ACM SIGPLAN Workshop on Language Models and Programming Languages",
+            "venue_short": "LMPL@SPLASH",
+            "year": 2026,
+            "selected": false
+        },
+        {
             "id": "swezze",
             "title": "Compressing Code Context for LLM-based Issue Resolution",
             "authors": [
@@ -793,6 +806,10 @@
         }
     ],
     "news": [
+        {
+            "date": { "day": 14, "month": 8, "year": 2026 },
+            "text": "A paper on prompt-injection-resistant coding agents has been accepted to LMPL'26."
+        },
         {
             "date": { "day": 7, "month": 8, "year": 2026 },
  	          "text": "A paper on assessing correctness of LLM-generated code has been accepted to OOPSLA'26."
@@ -1479,6 +1496,30 @@
         }
     ],
     "group": [
+        {
+            "name": "Haotian Xu",
+            "history": [
+                {
+                    "position": "PhD Student",
+                    "start": { "month": 9, "year": 2026 }
+                }
+            ],
+            "host": "Peking University",
+            "host_short": "PKU",
+            "alumni": false
+        },
+        {
+            "name": "Sijie Liang",
+            "history": [
+                {
+                    "position": "Master's Student",
+                    "start": { "month": 9, "year": 2026 }
+                }
+            ],
+            "host": "Peking University",
+            "host_short": "PKU",
+            "alumni": false
+        },
         {
             "name": "Yihan Dai",
             "history": [
