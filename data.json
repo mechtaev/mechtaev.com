@@ -139,7 +139,13 @@
             "venue": "ACM SIGPLAN Workshop on Language Models and Programming Languages",
             "venue_short": "LMPL@SPLASH",
             "year": 2026,
-            "selected": false
+            "selected": false,
+            "links": [
+                {
+                    "url": "https://arxiv.org/abs/2609.08371",
+                    "label": "Preprint"
+                }
+            ]
         },
         {
             "id": "swezze",
