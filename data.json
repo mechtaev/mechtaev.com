@@ -1632,7 +1632,8 @@
                     "date": { "year": 2026, "month": 9, "day": 14 },
                     "content": [ "lecture" ],
                     "materials": [
-                        { "title": "Simply Typed Lambda Calculus" }
+                        { "title": "Simply Typed Lambda Calculus", "file": "pku-10100024-clai-26_27-simply-typed-lambda-calculus.pdf" },
+                        { "title": "Simply Typed Lambda Calculus (Lean file)", "file": "pku-10100024-clai-26_27-simply-typed-lambda-calculus.lean" }
                     ]
                 },
                 {
