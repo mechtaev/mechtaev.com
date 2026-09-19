@@ -1633,14 +1633,16 @@
                     "content": [ "lecture" ],
                     "materials": [
                         { "title": "Simply Typed Lambda Calculus", "file": "pku-10100024-clai-26_27-simply-typed-lambda-calculus.pdf" },
-                        { "title": "Simply Typed Lambda Calculus (Lean file)", "file": "pku-10100024-clai-26_27-simply-typed-lambda-calculus.lean" }
+                        { "title": "Simply Typed Lambda Calculus (Lean file)", "file": "pku-10100024-clai-26_27-simply-typed-lambda-calculus.lean" },
+                        { "title": "Exercise 2.1", "file": "pku-10100024-clai-26_27-exercise-2-1.pdf" }
                     ]
                 },
                 {
                     "date": { "year": 2026, "month": 9, "day": 21 },
                     "content": [ "lecture" ],
                     "materials": [
-                        { "title": "The λ-Cube and Propositions-as-Types" }
+                        { "title": "The λ-Cube and Propositions-as-Types", "file": "pku-10100024-clai-26_27-lambda-cube.pdf" },
+                        { "title": "The λ-Cube and Propositions-as-Types (Lean file)", "file": "pku-10100024-clai-26_27-lambda-cube.lean" }
                     ]
                 },
                 {
