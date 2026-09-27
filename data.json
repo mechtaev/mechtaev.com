@@ -1649,7 +1649,8 @@
                     "date": { "year": 2026, "month": 9, "day": 28 },
                     "content": [ "lecture" ],
                     "materials": [
-                        { "title": "Definitions, Environments, and the Trusted Core" }
+                        { "title": "Propositional and Predicate Logic in λC", "file": "pku-10100024-clai-26_27-connectives.pdf" },
+                        { "title": "Propositional and Predicate Logic in λC (Lean file)", "file": "pku-10100024-clai-26_27-connectives.lean" }
                     ]
                 },
                 {
@@ -1660,7 +1661,7 @@
                     "date": { "year": 2026, "month": 10, "day": 12 },
                     "content": [ "lecture" ],
                     "materials": [
-                        { "title": "Inductive Types, and What CIC Adds" }
+                        { "title": "Definitions: Names, Environments, and the Machine" }
                     ]
                 },
                 {
@@ -1674,7 +1675,7 @@
                     "date": { "year": 2026, "month": 10, "day": 26 },
                     "content": [ "lecture" ],
                     "materials": [
-                        { "title": "Automation, and the Decidable Fragment" }
+                        { "title": "Numbers, Induction, and Inductive Types" }
                     ]
                 },
                 {

@@ -114,6 +114,27 @@ inductive Derives : Ctx → TTerm → Ty → Prop where
 
 notation:40 Γ " ⊢ " M " : " σ => Derives Γ M σ
 
+/-! ## Slide 24 — The same derivation, in flag format
+
+Not on the slide: the flag derivation of Example 2.4.6 as a tactic script,
+at α := Nat, β := String.  Each `intro` opens a flag, `exact` is the line
+under the flags, and leaving the block closes them, innermost first. -/
+
+def ex246Lean : (Nat → String) → Nat → String := by
+  intro y        -- flag (a):  y : Nat → String        ⊢ Nat → String
+  intro z        -- flag (b):  z : Nat                 ⊢ String
+  exact y z      -- line (3):  y z : String;  (1), (2) are the uses of y, z
+                 -- end of block: (4) closes flag (b), (5) closes flag (a)
+
+#print ex246Lean   -- fun y z => y z,  the term of line (5)
+
+-- With no arrow left in the goal there is no flag to open: a third `intro`
+-- fails with "There are no additional binders … in the goal to introduce".
+#guard_msgs (drop error) in
+example : (Nat → String) → Nat → String := by
+  intro y z w
+  exact y z
+
 /-! ## Slide 25 — That derivation, as a term (Example 2.4.6) -/
 
 -- line (5), then (4), (3), (1) and (2) of the flag derivation
@@ -167,7 +188,7 @@ instance (Γ : Ctx) (M : TTerm) (σ : Ty) : Decidable (Γ ⊢ M : σ) :=
 example : [] ⊢ ex246 : ((α ⇒ β) ⇒ α ⇒ β) := by decide
 example : ¬ ([] ⊢ .app ex246 ex246 : α)   := by decide
 
-/-! ## Slide 38 — λ→ is too weak: three things Lean says that λ→ cannot -/
+/-! ## Slide 38 — λ→ is too weak -/
 
 def id' {α : Type} (x : α) : α := x    -- one identity, for every type
 #check (List : Type → Type)             -- a type built from a type
