@@ -142,7 +142,7 @@ def build():
             structure[course["id"]] = {
                 "path": ["teaching", course["id"]],
                 "template": "course.html",
-                "title": course["title"],
+                "title": f'{course["code"]} {course["title"]}',
                 "course_id": course["id"]
             }
 

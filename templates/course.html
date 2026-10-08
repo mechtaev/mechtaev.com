@@ -6,6 +6,7 @@
 
 {# Meta: term · class times · TAs #}
 <div class="font-sans text-muted text-meta space-y-1 mb-section">
+  {% if course.title_zh %}<p>{{ course.title_zh }}</p>{% endif %}
   <p>{{ month_name(course.start.month) }} {{ course.start.year }}&ndash;{{ month_name(course.end.month) }} {{ course.end.year }}</p>
   {% if course.class_time %}
   <p>

@@ -31,15 +31,8 @@ LATEX_SPECIALS = {
 }
 
 
-def strip_cjk(s: str) -> str:
-    """Drop CJK alternatives like 'NSFC/国家自然科学基金' -> 'NSFC'."""
-    parts = [p for p in s.split("/") if not re.search(r"[一-鿿]", p)]
-    return "/".join(parts) or s
-
-
 def esc(s) -> str:
-    s = strip_cjk(str(s))
-    s = "".join(LATEX_SPECIALS.get(c, c) for c in s)
+    s = "".join(LATEX_SPECIALS.get(c, c) for c in str(s))
     s = re.sub(r'"([^"]*)"', r"``\1''", s)   # straight -> curly quotes
     return s.strip()
 
@@ -95,7 +88,7 @@ def build_context(data: dict) -> dict:
         if a["type"] == "award":
             awards.append(item | {"title": esc(a["title"])})
         elif a["type"] == "grant":
-            grants.append(item | {"funder": esc(a["funder"]), "call": esc(a["call"])})
+            grants.append(item | {"funder": esc(a["funder"]), "call": esc(a["call"]), "role": esc(a["role"])})
         else:
             deployments.append(item | {"title": esc(a["title"])})
 
@@ -130,7 +123,7 @@ def build_context(data: dict) -> dict:
 
     teaching = [{
         "role": esc(t["role"]),
-        "title": esc(t["title"]),
+        "title": esc(f'{t["code"]} {t["title"]}'),
         "institution": esc(t["institution"]),
         "dates": fmt_range(t["start"], t.get("end")),
     } for t in data["teaching"]]

@@ -10,7 +10,8 @@ Teaching
 <ul class="rows-loose">
   {% for c in teaching[:4] %}
   <li>
-    <p class="entry-title">{% if c.id %}{{ utils.link(c.title, page_url(c.id)) }}{% else %}{{ c.title }}{% endif %}</p>
+    <p class="entry-title">{% set name = c.code ~ " " ~ c.title %}{% if c.id %}{{ utils.link(name, page_url(c.id)) }}{% else %}{{ name }}{% endif %}</p>
+    {% if c.title_zh %}<p class="entry-meta">{{ c.title_zh }}</p>{% endif %}
     <p class="entry-meta">{{ c.institution }}</p>
     <p class="entry-note">{{ month_name(c.start.month) }} {{ c.start.year }}&ndash;{{ month_name(c.end.month) }} {{ c.end.year }}</p>
   </li>

@@ -8,7 +8,8 @@
 {% endif %}
 <div class="{% if not loop.last %}mb-block{% endif %}">
   {% if a.type == 'grant' %}
-  <p class="entry-title">{{ a.funder }} {{ a.call }}</p>
+  <p class="entry-title">{{ a.funder }} {{ a.call }} ({{ a.role }})</p>
+  {% if a.funder_zh or a.call_zh %}<p class="entry-meta">{{ a.funder_zh }}{{ a.call_zh }}</p>{% endif %}
   <p class="entry-body">{{ a.description }}.</p>
   {% else %}
   <p class="entry-title">{{ a.title }}</p>
