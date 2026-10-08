@@ -1092,6 +1092,8 @@
             "call": "Research Fund for International Excellent Young Scientists",
             "call_zh": "外国优秀青年学者研究基金项目",
             "description": "For my proposal \"Quality Assurance in the Era of Natural Language Driven Programming\"",
+            "amount": 800000,
+            "currency": "RMB",
             "year": 2026
         },
         {
@@ -1102,6 +1104,8 @@
             "call": "Technology Development Contract",
             "call_zh": "技术开发合同",
             "description": "For my proposal \"Generation, Detection and Repair of Consistency Constraints in AI-Driven Development of Complex Tasks\"",
+            "amount": 750000,
+            "currency": "RMB",
             "year": 2026
         },
         {
@@ -1110,6 +1114,8 @@
             "funder": "UCL-PKU",
             "call": "Peking University-University College London Strategic Partner Funds",
             "description": "For the proposal \"Prompt Compression for Efficient and Sustainable AI-Driven Software Engineering\" with Prof. Federica Sarro",
+            "amount": 100000,
+            "currency": "RMB",
             "year": 2026
         },
         {
@@ -1128,6 +1134,8 @@
             "funder": "PKU-KU",
             "call": "Peking University-Korea University Joint Research Funding",
             "description": "For the proposal \"Counterfactual inference for detecting and repairing hallucinations of code LLMs\" with Prof. Dongsun Kim",
+            "amount": 50000,
+            "currency": "RMB",
             "year": 2025
         },
         {
@@ -1138,6 +1146,8 @@
             "call": "Excellent Young Scientists Fund (Overseas)",
             "call_zh": "优秀青年科学基金项目（海外）",
             "description": "For my proposal \"Symbolic Executon of Datalog for Program Repair\"",
+            "amount": 1400000,
+            "currency": "RMB",
             "year": 2024
         },
         {
