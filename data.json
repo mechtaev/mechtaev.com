@@ -1712,7 +1712,9 @@
                     "content": [ "lecture" ],
                     "materials": [
                         { "title": "Definitions and Environments", "file": "pku-10100024-clai-26_27-definitions.pdf" },
-                        { "title": "Definitions and Environments (Lean file)", "file": "pku-10100024-clai-26_27-definitions.lean" }
+                        { "title": "Definitions and Environments (Lean file)", "file": "pku-10100024-clai-26_27-definitions.lean" },
+                        { "title": "Exercise 5.1", "file": "pku-10100024-clai-26_27-exercise-5-1.pdf" },
+                        { "title": "Exercise 5.2", "file": "pku-10100024-clai-26_27-exercise-5-2.pdf" }
                     ]
                 },
                 {
