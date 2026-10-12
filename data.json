@@ -39,6 +39,10 @@
     "employment": [
         {
             "employer": "Peking University",
+            "school": "School of Computer Science",
+            "school_zh": "计算机学院",
+            "institute": "Institute of Software",
+            "institute_zh": "软件研究所",
             "history": [
                 {
                     "title": "Assistant Professor",
@@ -47,6 +51,10 @@
                 }
             ],
             "description": "Conduct independent research, teach courses.",
+            "class_advisor": {
+                "class": "Programming Languages and Theory PhD Class",
+                "class_zh": "编程语言与理论博士生班"
+            },
             "location": "Beijing, China",
             "selected": true
         },
@@ -61,8 +69,8 @@
                 },
                 {
                     "title": "Lecturer",
-                    "start": { "day": 26, "month": 6, "year": 2024 },
-                    "end": { "day": 1, "month": 2, "year": 2019 },
+                    "start": { "day": 1, "month": 2, "year": 2019 },
+                    "end": { "day": 26, "month": 6, "year": 2024 },
                     "full_time": true
                 }                
             ],
@@ -2042,14 +2050,6 @@
             "institution": "Peking University",
             "start": { "month": 2, "year": 2025 },
             "end": { "month": 5, "year": 2025 },
-            "role": "Lecturer"
-        },
-        {
-            "code": "COMP0010",
-            "title": "Software Engineering",
-            "institution": "University College London",
-            "start": { "month": 9, "year": 2024 },
-            "end": { "month": 12, "year": 2024 },
             "role": "Lecturer"
         },
         {
