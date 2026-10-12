@@ -1703,7 +1703,8 @@
                     "date": { "year": 2026, "month": 10, "day": 12 },
                     "content": [ "lecture" ],
                     "materials": [
-                        { "title": "Definitions: Names, Environments, and the Machine" }
+                        { "title": "Definitions and Environments", "file": "pku-10100024-clai-26_27-definitions.pdf" },
+                        { "title": "Definitions and Environments (Lean file)", "file": "pku-10100024-clai-26_27-definitions.lean" }
                     ]
                 },
                 {
