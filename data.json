@@ -1102,7 +1102,9 @@
             "description": "For my proposal \"Quality Assurance in the Era of Natural Language Driven Programming\"",
             "amount": 800000,
             "currency": "RMB",
-            "year": 2026
+            "year": 2026,
+            "start": { "month": 1, "year": 2027 },
+            "end": { "month": 12, "year": 2028 }
         },
         {
             "type": "grant",
@@ -1114,7 +1116,9 @@
             "description": "For my proposal \"Generation, Detection and Repair of Consistency Constraints in AI-Driven Development of Complex Tasks\"",
             "amount": 750000,
             "currency": "RMB",
-            "year": 2026
+            "year": 2026,
+            "start": { "month": 10, "year": 2026 },
+            "end": { "month": 4, "year": 2027 }
         },
         {
             "type": "grant",
@@ -1124,7 +1128,9 @@
             "description": "For the proposal \"Prompt Compression for Efficient and Sustainable AI-Driven Software Engineering\" with Prof. Federica Sarro",
             "amount": 100000,
             "currency": "RMB",
-            "year": 2026
+            "year": 2026,
+            "start": { "month": 6, "year": 2026 },
+            "end": { "month": 11, "year": 2026 }
         },
         {
             "type": "grant",
@@ -1133,8 +1139,10 @@
             "funder_zh": "国家自然科学基金",
             "call": "Key Research Project",
             "call_zh": "重大研究计划",
-            "description": "For the proposal \"Neurosymbolic High-Confidence Code Generation and Optimization\" led by Prof. Yingfei Xiong in collaboration with Prof. Wen-Pin Jiao, Prof. Yanlin Wang, Prof. Yang Yu, Prof. Yang Liu, Prof. Wei Zhao, Prof. Siyuan Jiang",
-            "year": 2025
+            "description": "For the proposal \"Neurosymbolic High-Confidence Code Generation and Optimization\" (NSFC 92582202) led by Prof. Yingfei Xiong in collaboration with Prof. Wen-Pin Jiao, Prof. Yanlin Wang, Prof. Yang Yu, Prof. Yang Liu, Prof. Wei Zhao, Prof. Siyuan Jiang",
+            "year": 2025,
+            "start": { "month": 1, "year": 2026 },
+            "end": { "month": 12, "year": 2029 }
         },
         {
             "type": "grant",
@@ -1142,9 +1150,11 @@
             "funder": "PKU-KU",
             "call": "Peking University-Korea University Joint Research Funding",
             "description": "For the proposal \"Counterfactual inference for detecting and repairing hallucinations of code LLMs\" with Prof. Dongsun Kim",
-            "amount": 50000,
+            "amount": 55000,
             "currency": "RMB",
-            "year": 2025
+            "year": 2025,
+            "start": { "month": 8, "year": 2025 },
+            "end": { "month": 11, "year": 2025 }
         },
         {
             "type": "grant",
@@ -1156,7 +1166,9 @@
             "description": "For my proposal \"Symbolic Executon of Datalog for Program Repair\"",
             "amount": 1400000,
             "currency": "RMB",
-            "year": 2024
+            "year": 2024,
+            "start": { "month": 1, "year": 2027 },
+            "end": { "month": 12, "year": 2028 }
         },
         {
             "type": "award",
