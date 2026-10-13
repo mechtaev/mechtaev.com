@@ -193,6 +193,10 @@
                 {
                     "url": "https://arxiv.org/abs/2603.19239",
                     "label": "Preprint"
+                },
+                {
+                    "url": "/files/klee26.pdf",
+                    "label": "KLEE Workshop Presentation"
                 }
             ]
         },
@@ -1226,6 +1230,12 @@
         }
     ],
     "talks": [
+        {
+            "title": "Defusing Logic Bombs in Symbolic Execution with LLM-Generated Ghost Code",
+            "date": { "day": 16, "month": 10, "year": 2026 },
+            "host": "KLEE Workshop 2026",
+            "location": "Munich, Germany"
+        },
         {
             "title": "Quality Assurance in The Era of Natural Language Driven Programming",
             "date": { "day": 13, "month": 5, "year": 2026 },
