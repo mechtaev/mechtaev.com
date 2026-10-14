@@ -53,7 +53,8 @@
             "description": "Conduct independent research, teach courses.",
             "class_advisor": {
                 "class": "Programming Languages and Theory PhD Class",
-                "class_zh": "编程语言与理论博士生班"
+                "class_zh": "编程语言与理论博士生班",
+                "start": { "month": 9, "year": 2025 }
             },
             "location": "Beijing, China",
             "selected": true
