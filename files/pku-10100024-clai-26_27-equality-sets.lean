@@ -33,8 +33,8 @@ theorem leq_refl {S : Type} (x : S) : LEq x x := fun _ => Iff.rfl
 -- ⇒ instead of ⇔ would already do: P x ⇒ P y for all P gives the converse.
 def LEq' {S : Type} (x y : S) : Prop := ∀ P : S → Prop, P x → P y
 
--- The Π ranges over PREDICATES, P : S → ∗ : □.  So this is a
--- SECOND-ORDER definition, not a first-order ∀ over elements.
+-- The Π ranges over PREDICATES, P : S → ∗ₚ, and S → ∗ₚ : □.  So this is
+-- a SECOND-ORDER definition, not a first-order ∀ over elements.
 #check @LEq     -- @LEq : {S : Type} → S → S → Prop
 
 end Slide07
@@ -43,7 +43,7 @@ end Slide07
 
 namespace Slide09
 
--- Lean does not use the coding.  `Eq` is an inductive with ONE
+-- Lean does not use Leibniz's definition.  `Eq` is an inductive with ONE
 -- constructor, and its recursor is what substitutivity becomes.
 #print Eq
 -- inductive Eq.{u_1} : {α : Sort u_1} → α → α → Prop
@@ -64,12 +64,13 @@ namespace Slide10
 -- (declared on an earlier slide)
 def LEq {S : Type} (x y : S) : Prop := ∀ P : S → Prop, P x ↔ P y
 
--- The two notions coincide.  One direction needs only reflexivity ...
+-- The two notions coincide.  One direction substitutes along h,
+-- starting from reflexivity ...
 theorem eq_to_leq {S : Type} {x y : S} (h : x = y) : LEq x y :=
   fun P => h ▸ Iff.rfl
 
--- ... the other instantiates the quantifier at the predicate (x = ·),
--- the same trick that derives symmetry from substitutivity.
+-- ... the other instantiates the quantifier at the predicate (x = ·):
+-- once more, the proof is the choice of predicate.
 theorem leq_to_eq {S : Type} {x y : S} (h : LEq x y) : x = y :=
   (h (fun z => x = z)).mp rfl
 
@@ -155,10 +156,10 @@ example (a b : Nat) (h : a = b) (k : b = 5) : d a = 10 :=
     _      = 10  := rfl              -- definitional: δ, then arithmetic
 
 -- Mixed relations chain too; the result is the strongest one used.
-example (a b c d : Nat) (h₁ : a ≤ b) (h₂ : b < c) (h₃ : c ≤ d) : a < d :=
+example (a b c e : Nat) (h₁ : a ≤ b) (h₂ : b < c) (h₃ : c ≤ e) : a < e :=
   calc a ≤ b := h₁
     _ < c := h₂
-    _ ≤ d := h₃
+    _ ≤ e := h₃
 
 end Slide17
 
@@ -220,7 +221,7 @@ def ExUnique {S : Type} (P : S → Prop) : Prop :=
   (∃ x, P x) ∧ ∀ y z, P y → P z → y = z
 
 -- ι(S,P,u) := ⊥⊥ : S  and  ι-prop(S,P,u) := ⊥⊥ : P (ι ...).
--- Lean's are `Classical.choose` and `choose_spec`, primitive too:
+-- Lean's are `Classical.choose` and `choose_spec`, built on an axiom:
 noncomputable def iota {S : Type} (P : S → Prop) (u : ExUnique P) : S :=
   Classical.choose u.1
 theorem iota_prop {S : Type} (P : S → Prop) (u : ExUnique P) : P (iota P u) :=
@@ -270,23 +271,23 @@ instance {S : Type} : Membership S (PS S) := ⟨Mem⟩        -- write x ∈ V
 def Subs {S : Type} (V W : PS S) : Prop :=                -- (3) V ⊆ W
   ∀ x : S, x ∈ V → x ∈ W
 infix:50 " ⊑ " => Subs
+def IS {S : Type} (V W : PS S) : Prop := V ⊑ W ∧ W ⊑ V    -- same elements
+def diff {S : Type} (V W : PS S) : PS S := fun x => x ∈ V ∧ ¬ x ∈ W  -- V \ W
+def compl {S : Type} (V : PS S) : PS S := fun x => ¬ x ∈ V           -- V^c
 
 example (S : Type) (V W : PS S) :
     (V ⊑ W) = ∀ x : S, x ∈ V → x ∈ W := rfl     -- the guarded ∀, verbatim
 
--- support: the rest of the course's `Clai.Sets` that later slides use.
+-- support: set-builder notation, which the slides mention but do not show.
 def sep {S : Type} (P : S → Prop) : PS S := P
 notation "{" x " | " p "}" => sep (fun x => p)
-def IS {S : Type} (V W : PS S) : Prop := V ⊑ W ∧ W ⊑ V
-def diff  {S : Type} (V W : PS S) : PS S := fun x => x ∈ V ∧ ¬ (x ∈ W)
-def compl {S : Type} (V : PS S)   : PS S := fun x => ¬ (x ∈ V)
 
 /-! ## Slide 33 — Membership needs a proof -/
 
 namespace Slide33
 
--- x ∈ V is not x : V but x ε V, which is a TYPE.  To establish x ∈ V
--- we have to give a PROOF.
+-- x ∈ V is not a typing x : V but a PROPOSITION.  To establish it we
+-- have to give a PROOF.
 def Evens : PS Nat := fun n => n % 2 = 0
 
 -- `4 ∈ Evens` unfolds to `4 % 2 = 0`, so a computation proves it.
@@ -294,8 +295,8 @@ example : 4 ∈ Evens := show 4 % 2 = 0 by decide
 #guard_msgs(drop error) in
 example : 5 ∈ Evens := show 5 % 2 = 0 by decide   -- fails: 5 % 2 = 1
 
--- The rules ε-in and ε-el are both the identity: `x ε {x | P x}`
--- is β-equal to `P x`, so nothing needs doing.
+-- `n ∈ Evens` IS `n % 2 = 0`, up to unfolding: a proof of one is a
+-- proof of the other, with nothing to convert.
 example (n : Nat) (h : n % 2 = 0) : n ∈ Evens := h
 
 end Slide33
@@ -304,16 +305,21 @@ end Slide33
 
 namespace Slide35
 
--- The translation convention.  Every quantifier ranges over a TYPE;
--- the subset becomes a GUARD:
---   ∀x∈V (P x)  ⟿  ∀x : S. (x ε V ⇒ P x)      -- implication
---   ∃x∈V (P x)  ⟿  ∃x : S. (x ε V ∧ P x)      -- CONJUNCTION
-example (V : PS Nat) (P : Nat → Prop) : Prop := ∀ x, x ∈ V → P x
-example (V : PS Nat) (P : Nat → Prop) : Prop := ∃ x, x ∈ V ∧ P x
+-- (declared on an earlier slide)
+def Evens : PS Nat := fun n => n % 2 = 0
 
--- The asymmetry is not a typo.  With ∧ in the universal case, the claim
--- would assert that every x is in V; with ⇒ in the existential case, it
--- would be satisfied by any x outside V.
+-- ∀x ∈ Evens. x·x is even:  quantify over Nat, guard with ⇒.
+example : ∀ x : Nat, x ∈ Evens → (x * x) % 2 = 0 := by
+  intro x (hx : x % 2 = 0)                 -- any x, assuming the guard
+  simp [Nat.mul_mod, hx]
+
+-- ∃x ∈ Evens. x > 3:  guard with ∧; the witness 4 meets both halves.
+example : ∃ x : Nat, x ∈ Evens ∧ x > 3 :=
+  ⟨4, show 4 % 2 = 0 by decide, by decide⟩
+
+-- With ⇒ instead, x = 1 would do: 1 ∉ Evens makes the ⇒ vacuous.
+example : ∃ x : Nat, x ∈ Evens → x > 1000 :=
+  ⟨1, fun h => absurd (show 1 % 2 = 0 from h) (by decide)⟩
 
 end Slide35
 
