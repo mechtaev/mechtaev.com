@@ -1744,7 +1744,7 @@
                     "date": { "year": 2026, "month": 10, "day": 19 },
                     "content": [ "lecture" ],
                     "materials": [
-                        { "title": "Equality, and Sets as Predicates" }
+                        { "title": "Equality, and Sets as Predicates", "file": "pku-10100024-clai-26_27-equality-sets.pdf" }
                     ]
                 },
                 {
