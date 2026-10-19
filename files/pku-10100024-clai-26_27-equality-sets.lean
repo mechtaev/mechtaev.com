@@ -10,8 +10,9 @@ How to run
 
 `-- Slide N` names the page of the deck the code appears on.  Each slide
 sits in its own namespace, so a name defined on one slide (`d`, `LEq`,
-`iota`) can be defined afresh on another.  The block marked "support"
-holds definitions the slides use but do not show.  Expected errors are
+`iota`) can be defined afresh on another; the subset definitions of
+slide 32 stay at top level, since later slides use them.  The block marked
+"support" holds definitions the slides use but do not show.  Expected errors are
 wrapped in `#guard_msgs(drop error) in`, as on the slides.
 -/
 
@@ -26,7 +27,7 @@ namespace Slide07
 -- "x and y are equal iff they are INDISCERNIBLE by any predicate."
 def LEq {S : Type} (x y : S) : Prop := ∀ P : S → Prop, P x ↔ P y
 
--- reflexivity, by instantiating at P x ⇔ P x
+-- reflexivity: for every P, ⇔-refl, which Lean calls Iff.rfl
 theorem leq_refl {S : Type} (x : S) : LEq x x := fun _ => Iff.rfl
 
 -- ⇒ instead of ⇔ would already do: P x ⇒ P y for all P gives the converse.
@@ -260,36 +261,25 @@ def theWitness (h : ∃ n : Nat, 3 < n) : Nat := match h with | ⟨n, _⟩ => n
 
 end Slide29
 
--- support: the few lines of the course's `Clai.Sets` that the slides use.
--- Lean core has no `Set`.
-abbrev PS (S : Type) : Type := S → Prop
-def Mem {S : Type} (V : PS S) (x : S) : Prop := V x
-instance {S : Type} : Membership S (PS S) := ⟨Mem⟩
-def sep {S : Type} (P : S → Prop) : PS S := P
-notation "{" x " | " p "}" => sep (fun x => p)
-def Subs {S : Type} (V W : PS S) : Prop := ∀ x : S, x ∈ V → x ∈ W
+/-! ## Slide 32 — ps(S) in Lean (top level: later slides use it) -/
+
+-- Lean core has no `Set`; these lines are all of it.
+abbrev PS (S : Type) : Type := S → Prop                   -- (1) ps(S)
+def Mem {S : Type} (V : PS S) (x : S) : Prop := V x       -- (2) x ε V
+instance {S : Type} : Membership S (PS S) := ⟨Mem⟩        -- write x ∈ V
+def Subs {S : Type} (V W : PS S) : Prop :=                -- (3) V ⊆ W
+  ∀ x : S, x ∈ V → x ∈ W
 infix:50 " ⊑ " => Subs
-def IS {S : Type} (V W : PS S) : Prop := V ⊑ W ∧ W ⊑ V
-def diff  {S : Type} (V W : PS S) : PS S := fun x => x ∈ V ∧ ¬ (x ∈ W)
-def compl {S : Type} (V : PS S)   : PS S := fun x => ¬ (x ∈ V)
 
-/-! ## Slide 32 — ps(S), built rather than imported -/
-
-namespace Slide32
-
--- The subset definitions, transcribed in `Clai.Sets` (Lean CORE has no
--- `Set`: that is Mathlib).  Thirty-odd lines, nothing hidden.
-#check @PS     -- Type → Type                      (1) ps(S) := S → ∗ₚ
-#check @Mem    -- {S : Type} → PS S → S → Prop     (2) element(S,x,V) := V x
-#check @Subs   -- {S : Type} → PS S → PS S → Prop  (3) ⊆(S,V,W)
 example (S : Type) (V W : PS S) :
     (V ⊑ W) = ∀ x : S, x ∈ V → x ∈ W := rfl     -- the guarded ∀, verbatim
 
--- On paper V ⊆ W; here V ⊑ W.  `⊆` is core's `HasSubset` notation; a
--- symbol of our own keeps definition (3) visibly THE definition, and
--- later lectures read the same symbol as entailment.
-
-end Slide32
+-- support: the rest of the course's `Clai.Sets` that later slides use.
+def sep {S : Type} (P : S → Prop) : PS S := P
+notation "{" x " | " p "}" => sep (fun x => p)
+def IS {S : Type} (V W : PS S) : Prop := V ⊑ W ∧ W ⊑ V
+def diff  {S : Type} (V W : PS S) : PS S := fun x => x ∈ V ∧ ¬ (x ∈ W)
+def compl {S : Type} (V : PS S)   : PS S := fun x => ¬ (x ∈ V)
 
 /-! ## Slide 33 — Membership needs a proof -/
 
@@ -372,14 +362,20 @@ end Slide40
 
 namespace Slide41
 
--- Lean's counterparts of the axiom: `funext` and `propext`.
+-- Same elements, different terms: 0 + n does not compute to n.
+def A : PS Nat := fun n => 0 + n = 5
+def B : PS Nat := fun n => n = 5
+theorem same_elements : ∀ x, x ∈ A ↔ x ∈ B := by
+  intro x; show 0 + x = 5 ↔ x = 5; rw [Nat.zero_add]
+
+#guard_msgs(drop error) in
+example : A = B := rfl          -- fails: equality compares the terms
+
+-- The axioms: functions equal pointwise, propositions equal if ↔.
 theorem setext {α : Type} {V W : PS α} (h : ∀ x, x ∈ V ↔ x ∈ W) : V = W :=
   funext (fun x => propext (h x))
+example : A = B := setext same_elements
 
-#print axioms setext
--- 'setext' depends on axioms: [propext, Quot.sound]
--- TWO, not one.  `propext` turns the ↔ into an =; but `funext` is NOT
--- primitive in Lean — it is derived from quotient soundness, so
--- `Quot.sound` appears too.  λD needed an axiom; so does Lean.
+#print axioms setext  -- [propext, Quot.sound]: funext comes from quotients
 
 end Slide41
