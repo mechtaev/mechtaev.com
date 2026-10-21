@@ -114,7 +114,7 @@
 %---------------------------------------------------------------------
 \section{Grants}
 \BLOCK{for g in grants}
-\entry{\textbf{\VAR{g.funder}}, \VAR{g.call} (\VAR{g.role}\BLOCK{if g.amount}, \VAR{g.amount}\BLOCK{endif})}{\VAR{g.year}}
+\entry{\textbf{\VAR{g.funder}}, \VAR{g.call}\BLOCK{if g.number} No.~\VAR{g.number}\BLOCK{endif} (\VAR{g.role}\BLOCK{if g.amount}, \VAR{g.amount}\BLOCK{endif})}{\VAR{g.year}}
 \detail{\VAR{g.description}}
 \BLOCK{endfor}
 

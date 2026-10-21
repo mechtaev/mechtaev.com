@@ -89,6 +89,7 @@ def build_context(data: dict) -> dict:
             awards.append(item | {"title": esc(a["title"])})
         elif a["type"] == "grant":
             grants.append(item | {"funder": esc(a["funder"]), "call": esc(a["call"]), "role": esc(a["role"]),
+                                  "number": esc(a.get("number", "")),
                                   "amount": f'{a["currency"]} {a["amount"]:,}' if "amount" in a else ""})
         else:
             deployments.append(item | {"title": esc(a["title"])})
