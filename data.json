@@ -138,6 +138,26 @@
     ],
     "publications": [
         {
+            "id": "contrapuntal",
+            "title": "Validating Autoformalized Specifications via Contrapuntal Languages",
+            "authors": [
+                { "name": "Yihan Dai", "authorship": "normal" },
+                { "name": "Xuanlin Liu", "authorship": "normal" },
+                { "name": "Haoxiang Jia", "authorship": "normal" },
+                { "name": "Tianchi Li", "authorship": "normal" },
+                { "name": "Xin Zhang", "authorship": "normal" },
+                { "name": "Sergey Mechtaev", "authorship": "corresponding" }
+            ],
+            "year": 2026,
+            "selected": false,
+            "links": [
+                {
+                    "url": "https://arxiv.org/abs/2610.30059",
+                    "label": "Preprint"
+                }
+            ]
+        },
+        {
             "id": "capscope",
             "title": "Authority Is Not a String: A Capability-Scoped Harness for Prompt-Injection-Resistant Coding Agents",
             "authors": [
