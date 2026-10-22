@@ -1,0 +1,53 @@
+{% extends "page.html" %}
+
+{% import 'utils.html' as utils %}
+
+{# One line per position. History runs newest first and an earlier position
+   without its own end closes when the next one starts. #}
+{% macro history(m) %}
+{% for h in m.history %}
+{% set end = h.end or (loop.previtem.start if not loop.first) %}
+<p class="entry-meta">{{ h.position }}, {{ m.host }}, {{ h.start.year }}{% if end %}{% if end.year != h.start.year %}–{{ end.year }}{% endif %}{% elif not m.alumni %}–present{% endif %}</p>
+{% endfor %}
+{% endmacro %}
+
+{# Members without a photo get a faint silhouette in the same square, so every
+   row lines up the same way without the gap drawing the eye. #}
+{% macro member(m) %}
+<li class="flex gap-block items-start">
+  {% if m.photo %}
+  <img class="block w-24 h-24 sm:w-28 sm:h-28 object-cover shrink-0" src="{{ file_url(m.photo) }}" alt="{{ m.name }}'s photo" />
+  {% else %}
+  <svg class="block w-24 h-24 sm:w-28 sm:h-28 shrink-0 bg-rule/40 text-rule" viewBox="0 0 100 100" aria-hidden="true">
+    <circle cx="50" cy="40" r="16" fill="currentColor" />
+    <path d="M18 100 C18 74 32 64 50 64 C68 64 82 74 82 100 Z" fill="currentColor" />
+  </svg>
+  {% endif %}
+  <div class="min-w-0 flex flex-col gap-1">
+    <p class="entry-title">{{ m.name }}</p>
+    {{ history(m) }}
+    {% if m.thesis %}<p class="entry-body">{{ "Thesis" if m.alumni else "Thesis topic" }}: <em>{{ m.thesis }}</em></p>{% endif %}
+    {% for h in m.honors %}<p class="font-sans text-award text-meta">{{ h }}</p>{% endfor %}
+    {% if m.note %}<p class="entry-note">{{ m.note }}</p>{% endif %}
+    {% if m.first_job %}<p class="entry-note">First position: {{ m.first_job }}</p>{% endif %}
+    {% if m.homepage or m.scholar %}
+    <div class="link-row">
+      {% if m.homepage %}{{ utils.link('Homepage', m.homepage) }}{% endif %}
+      {% if m.scholar %}{{ utils.link('Google Scholar', m.scholar) }}{% endif %}
+    </div>
+    {% endif %}
+  </div>
+</li>
+{% endmacro %}
+
+{% block inner %}
+<h2 class="section-label">Current Students</h2>
+<ul class="rows-loose">
+  {% for m in group if not m.alumni %}{{ member(m) }}{% endfor %}
+</ul>
+
+<h2 class="section-label mt-section">Alumni</h2>
+<ul class="rows-loose">
+  {% for m in group|reverse if m.alumni %}{{ member(m) }}{% endfor %}
+</ul>
+{% endblock %}

@@ -40,16 +40,18 @@ def esc(s) -> str:
 # ---------------------------------------------------------------- dates
 
 def fmt_my(d: dict) -> str:
+    if "month" not in d:
+        return str(d["year"])
     return f"{MONTHS[d['month'] - 1]} {d['year']}"
 
 
 def fmt_range(start: dict, end: dict | None) -> str:
     if end is None:
         return f"{fmt_my(start)} -- present"
-    a, b = sorted([(start["year"], start["month"]), (end["year"], end["month"])])
+    a, b = sorted([start, end], key=lambda d: (d["year"], d.get("month", 0)))
     if a == b:
-        return f"{MONTHS[a[1] - 1]} {a[0]}"
-    return f"{MONTHS[a[1] - 1]} {a[0]} -- {MONTHS[b[1] - 1]} {b[0]}"
+        return fmt_my(a)
+    return f"{fmt_my(a)} -- {fmt_my(b)}"
 
 
 # -------------------------------------------------------------- context
@@ -135,14 +137,14 @@ def build_context(data: dict) -> dict:
         start = min(s["history"], key=lambda h: (h["start"]["year"], h["start"]["month"]))["start"]
         ends = [h["end"] for h in s["history"] if h.get("end")]
         if ends:
-            dates = fmt_range(start, max(ends, key=lambda d: (d["year"], d["month"])))
+            dates = fmt_range(start, max(ends, key=lambda d: (d["year"], d.get("month", 0))))
         elif s["alumni"]:
             dates = fmt_my(start)
         else:
             dates = fmt_range(start, None)
         detail_parts = []
         if s.get("thesis"):
-            detail_parts.append(rf"Thesis: \emph{{{esc(s['thesis'])}}}.")
+            detail_parts.append(rf"{'Thesis' if s['alumni'] else 'Thesis topic'}: \emph{{{esc(s['thesis'])}}}.")
         if s.get("note"):
             detail_parts.append(esc(s["note"]) + ".")
         if s.get("first_job"):

@@ -1603,7 +1603,10 @@
             ],
             "host": "Peking University",
             "host_short": "PKU",
-            "alumni": false
+            "alumni": false,
+            "thesis": "Harnesses and Interaction Protocols for Coding Agents",
+            "photo": "group/haotian-xu.jpg",
+            "homepage": "https://pku-xht.github.io/"
         },
         {
             "name": "Sijie Liang",
@@ -1615,7 +1618,11 @@
             ],
             "host": "Peking University",
             "host_short": "PKU",
-            "alumni": false
+            "alumni": false,
+            "thesis": "Agentic Generation of Verified Programs in Lean",
+            "photo": "group/sijie-liang.jpg",
+            "homepage": "https://sijie-liang.jacarileah.chatgpt.site",
+            "scholar": "https://scholar.google.com/citations?user=qOc8Go0AAAAJ"
         },
         {
             "name": "Yihan Dai",
@@ -1627,7 +1634,11 @@
             ],
             "host": "Peking University",
             "host_short": "PKU",
-            "alumni": false
+            "alumni": false,
+            "thesis": "Addressing the Oracle Problem in AI-Generated Code",
+            "photo": "group/yihan-dai.jpg",
+            "homepage": "https://yihandai3826.github.io/",
+            "scholar": "https://scholar.google.com/citations?user=Ra2pxQUAAAAJ"
         },
         {
             "name": "Dimitrios Stamatios Bouras",
@@ -1643,7 +1654,12 @@
             ],
             "host": "Peking University",
             "host_short": "PKU",
-            "alumni": false
+            "alumni": false,
+            "thesis": "Augmenting Classical Program Analysis with Large Language Models",
+            "photo": "group/dimitrios-bouras.jpg",
+            "homepage": "https://bouras.online/",
+            "scholar": "https://scholar.google.com/citations?user=SAT5NjIAAAAJ",
+            "honors": [ "NSFC Research Fund for Excellent International PhD Students" ]
         },
         {
             "name": "Haoxiang Jia",
@@ -1656,7 +1672,9 @@
             "host": "Peking University",
             "host_short": "PKU",
             "alumni": false,
-            "thesis": "Addressing LLM Hallucinations in Software Engineering Tasks"
+            "thesis": "Information Management for LLM-Based Software Engineering",
+            "photo": "group/haoxiang-jia.jpg",
+            "scholar": "https://scholar.google.com/citations?user=3LH8plsAAAAJ"
         },
         {
             "name": "Yu Liu",
@@ -1664,13 +1682,14 @@
             "history": [
                 {
                     "position": "PhD Student",
-                    "start": { "month": 9, "year": 2020 }
+                    "start": { "month": 9, "year": 2020 },
+                    "end": { "year": 2025 }
                 }
             ],
             "host": "National University of Singapore",
             "host_short": "NUS",
             "alumni": true,
-            "thesis": "A Static Program Repair Framework Based on Symbolic Datalog"
+            "thesis": "Program Repair Using Datalog-Based Static Analysis"
         },
         {
             "name": "Nikhil Parasaram",

@@ -25,6 +25,11 @@ structure = {
         "template": "research.html",
         "title": "Research"
     },
+    "group": {
+        "path": ["group"],
+        "template": "group.html",
+        "title": "Group"
+    },
     "achievements": {
         "path": ["achievements"],
         "template": "achievements.html",
